@@ -264,8 +264,8 @@
     width: 28px;
 }
     .feature-icon {
-      width: 54px;
-      height: 54px;
+      width: 48px;
+    height: 48px;
       border-radius: 14px;
       display: flex;
       align-items: center;
@@ -424,7 +424,7 @@ ul.email-lst {
 .bottom-actions {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 12px;
     margin-bottom: 0px;
 }
 .dark-btn {
@@ -682,12 +682,6 @@ ul.email-lst {
     }
 
     .stats-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 80%;
-      padding: 16px 22px;
-      border-radius: 18px;
       background:
         linear-gradient(180deg,
           rgba(7, 18, 60, .96),
@@ -698,6 +692,13 @@ ul.email-lst {
       box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, .04),
         0 10px 40px rgba(0, 0, 0, .25);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      padding: 14px 14px;
+      border-radius: 18px;
+        
     }
 
     .stats-item {
@@ -741,8 +742,8 @@ ul.email-lst {
     }
 
     .avatars img {
-      width: 42px;
-      height: 42px;
+      width: 36px;
+    height: 36px;
       border-radius: 50%;
       object-fit: cover;
       margin-left: -10px;
@@ -897,8 +898,10 @@ ul.email-lst {
       }
 
       .stats-item {
-        width: calc(50% - 10px);
-        flex: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
       }
 
       .brands {
