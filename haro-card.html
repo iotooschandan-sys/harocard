@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IOGOOS Solution</title>
 
+  <link rel="stylesheet" href="responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
@@ -833,6 +834,8 @@ ul.email-lst {
 
     }
 
+
+
     @media(max-width:768px) {
 
       .container {
@@ -855,31 +858,42 @@ ul.email-lst {
         width: 100%;
       }
 
-      .hero-title {
-        font-size: 46px;
-        line-height: 1.08;
-      }
+     .hero-title {
+    font-size: 30px;
+    line-height: 1.08;
+    letter-spacing: 1px;
+}
 
       .hero-desc {
-        font-size: 18px;
+        font-size: 17px;
       }
+      .email-box i {
+        font-size: 21px;
+        position: absolute;
+        left: 48px;
+    }
+   
+    .email-box {
+    position: relative;
+}
+.email-box i {
+    font-size: 21px;
+    position: absolute;
+    left: -4px;
+    top: 14px;
+}
+.email-box button {
+    width: 100%;
+    margin-right: auto;
+    padding: 13px 9px;
+    font-size: 16px;
+}
 
-      .features {
-        gap: 18px;
-      }
 
-      .email-box {
-        flex-direction: column;
-      }
 
-      .email-box button {
-        width: 100%;
-      }
-
-      .bottom-actions {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+  .features {
+    gap: 13px;
+}
 
       .mobile {
         position: relative;
@@ -925,20 +939,13 @@ PREMIUM MOBILE SLIDER
         grid-template-columns: 1fr;
         gap: 40px;
       }
+.stats-bar {
+    width: 100%;
+}
 
       .visual {
-
-        width: 100%;
-
-        min-height: 520px;
-
-        padding-right: 0;
-
-        margin-top: 20px;
-
-        justify-content: center;
-
-        overflow: hidden;
+        min-height: 495px !important;
+        margin-top: 0px;
       }
 
       .card-slider {
@@ -1178,6 +1185,81 @@ PREMIUM MOBILE SLIDER
 
     }
 
+
+    @media(max-width:575px){
+      ul.email-lst {
+    display: grid;
+    margin: 0;
+    font-size: 13px;
+    gap: 11px;
+}
+
+.email-box {
+    flex-direction: column;
+}
+.bottom-actions button {
+    width: 100%;
+}
+.stats-bar {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+}
+  .visual {
+        padding-right: 0 !important;
+        min-height: auto;
+        margin-top: 20px;
+      }
+      .bottom-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+.email-box {
+    max-width: 257px;
+    flex-direction: column;
+}
+ .email-box input {
+        padding: 6px 24px 12px 80px;
+    }
+.review-box {
+    width: 100%;
+}
+.card-slider {
+    margin-right: 20px;
+}
+.swap-card h2 {
+    font-size: 25px;
+}
+.mobile-header {
+    font-size: 30px  !important;
+}
+.brands span {
+    font-size: 20px;
+}
+.trusted {
+    padding: 34px 15px 60px;
+}
+.trusted p {
+    font-size: 16px;
+}
+.hero-grid {
+    gap: 0;
+}
+    }
+
+      @media (min-width: 576px) and (max-width: 768px) {
+.email-box input {
+    padding: 9px 24px 9px 44px;
+}
+.email-box i {
+    top: 19px;
+}
+.features {
+    gap: 35px;
+}
+  }
+
+   
 
     /* =========================================
 RIGHT SIDE ELEGANT SLIDER
@@ -1636,11 +1718,7 @@ RIGHT SIDE ELEGANT SLIDER
 
     @media(max-width:768px) {
 
-      .visual {
-        padding-right: 0;
-        min-height: auto;
-        margin-top: 40px;
-      }
+    
 
       .card-slider {
         height: 480px;
@@ -1667,10 +1745,6 @@ RIGHT SIDE ELEGANT SLIDER
     }
 
 
-
-    @media (max-width:575px){
-
-    }
   </style>
 </head>
 
@@ -1978,7 +2052,7 @@ REPLACE YOUR EXISTING .visual SECTION
 
         <div class="stats-bar">
 
-          <div class="stats-item">
+          <div class="stats-item mb-state">
 
             <div class="avatars">
               <img src="https://i.pravatar.cc/100?img=11">
