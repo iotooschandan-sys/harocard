@@ -1,0 +1,86 @@
+
+
+@media(max-width:575px) {
+
+    .right-bg img {
+    width: 300px;
+}
+.right-bg img {
+    margin: 0;
+}
+.hero {
+    padding: 30px 0;
+}
+.trusted-title::before, .trusted-title::after {
+    display: none;
+}
+.upw_main_sec {
+    padding: 50px 0;
+}
+h2 {
+    font-size: 28px !important;
+}
+.trusted {
+    padding: 0;
+    margin: 0;
+}
+.upw_para {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.counter-box {
+    padding: 10px;
+}
+.counter-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 17px;
+    margin: 0 auto 20px;
+}
+.counter-divider {
+    width: 100px;
+    height: 2px;
+    margin: 22px auto;
+}
+.counter-text {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.counter-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.upw_text_wrap h4 {
+    font-size: 20px;
+}
+.upw_icon_wrap img {
+    width: 100px;
+    height: auto;
+}
+.upw_icon_wrap {
+    height: auto;
+}
+.container {
+    padding: 0;
+}
+.ecom-service-section {
+    padding: 50px 0;
+}
+.ecom-description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.ecom-main-heading {
+    margin-bottom: 20px;
+}
+.ecom-footer-link a {
+    font-size: 12px;
+}
+.ecom-divider {
+    width: 50px;
+}
+.right-bg {
+    text-align: center;
+}
+}

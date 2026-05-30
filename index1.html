@@ -5,12 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IOGOOS Solution</title>
+  <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" href="responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
       margin: 0;
@@ -130,7 +132,12 @@
       font-weight: 800;
       letter-spacing: -1px;
     }
-
+.mb-btn{
+  display: none;
+}
+.mb-txt{
+  display: none;
+}
     .nav-links {
       list-style: none;
       display: flex;
@@ -346,7 +353,6 @@ ul.email-lst {
 }
     .email-box {
       width: 100%;
-      max-width: 700px;
 
       display: flex;
       align-items: center;
@@ -373,7 +379,7 @@ ul.email-lst {
       flex: 1;
       border: none;
       outline: none;
-      padding: 16px 24px 16px 14px;
+      padding: 16px 24px 16px 22px;
       font-size: 18px;
       color: #111827;
       background: transparent;
@@ -696,7 +702,7 @@ ul.email-lst {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 90%;
+      width: 92%;
       padding: 14px 14px;
       border-radius: 18px;
         
@@ -839,7 +845,7 @@ ul.email-lst {
     @media(max-width:768px) {
 
       .container {
-        padding: 22px 18px 30px;
+        padding: 22px 12px 30px;
       }
 
       .navbar {
@@ -941,6 +947,10 @@ PREMIUM MOBILE SLIDER
       }
 .stats-bar {
     width: 100%;
+}
+
+.form-secwrap {
+    display: none;
 }
 
       .visual {
@@ -1193,7 +1203,76 @@ PREMIUM MOBILE SLIDER
     font-size: 13px;
     gap: 11px;
 }
+.slide-track {
+    gap: 20px;
+}
+.client-img {
+    width: 100px;
+}
+.d-none.mb-txt {
+    font-size: 15px;
+    margin-top: 10px;
+    display: block;
+}
+.visual {
+    display: none !important;
+}
+button.desk-btn {
+    display: none;
+}
+.avatars img {
+    display: none;
+}
+.avatars img {
+    display: none;
+}
 
+.avatars img:first-child {
+    display: block;
+            width: 20px;
+        height: 20px;
+}
+button.mb-btn {
+    display: block;
+    position: absolute;
+    width: 34px;
+    right: 13px;
+    height: 33px;
+    padding: 0;
+    /* font-weight: bold; */
+}
+
+.plus {
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+}
+.consult-card-box {
+    width: 274px;
+    padding: 30px 14px;
+}
+.consult-heading {
+    font-size: 20px;
+    display: block;
+}
+.consult-input-wrapper {
+    margin: 10px 0;
+    padding: 12px;
+}
+.consult-action-btn {
+    padding: 15px;
+    font-size: 15px;
+}
+.consult-footer-note {
+    margin-top: 15px;
+}
+.form-secwrap {
+    margin-top: 25px;
+}
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .email-box {
     flex-direction: column;
 }
@@ -1202,8 +1281,15 @@ PREMIUM MOBILE SLIDER
 }
 .stats-bar {
     display: grid;
-    gap: 20px;
+    gap: 13px;
     width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+.stats-icon i {
+    font-size: 24px;
+}
+.stats-text h3 {
+    font-size: 18px;
 }
   .visual {
         padding-right: 0 !important;
@@ -1215,12 +1301,19 @@ PREMIUM MOBILE SLIDER
         align-items: flex-start;
       }
 .email-box {
-    max-width: 257px;
+    max-width: 100%;
     flex-direction: column;
+    margin-bottom: 0;
+}
+.hero-left {
+    padding-right: 0;
 }
  .email-box input {
-        padding: 6px 24px 12px 80px;
+      padding: 6px 24px 6px 27px;
     }
+    ul.email-lst {
+      display: none;
+  }
 .review-box {
     width: 100%;
 }
@@ -1257,7 +1350,26 @@ PREMIUM MOBILE SLIDER
 .features {
     gap: 35px;
 }
+
+.consult-card-box {
+    width: 530px;
+}
+.form-secwrap {
+    margin-bottom: 15px;
+}
+
+
   }
+
+    @media (min-width: 100px) and (max-width: 320px) {
+.email-box {
+    max-width: 270px;
+}
+
+.email-box input {
+    padding: 7px 24px 6px 70px;
+}
+    }
 
    
 
@@ -1771,9 +1883,7 @@ RIGHT SIDE ELEGANT SLIDER
       <!-- HERO GRID -->
 
       <div class="hero-grid">
-
         <!-- LEFT -->
-
         <div class="hero-left">
 
           <div class="badge">
@@ -1825,9 +1935,10 @@ RIGHT SIDE ELEGANT SLIDER
             <div class="email-box">
               <i class="fa-solid fa-envelope"></i>
               <input type="email" placeholder="Enter your email">
-              <button>Book Free Consultation →</button>
+              <button class="mb-btn">→</button>
+              <button class="desk-btn">Book Free Consultation →</button>
             </div>
-
+            <p class="d-none mb-txt">Enter your email for free consultancy</p>
             <ul class="email-lst">
               <li><i class="fas fa-shield-alt"></i> No Spam</li>
               <li><i class="fas fa-gift"></i> Free Strategy Session</li>
@@ -1869,178 +1980,73 @@ RIGHT SIDE ELEGANT SLIDER
           </div>
 
         </div>
-
-          </div>
+        </div>
         <!-- RIGHT -->
+        <div class="form-secwrap">
+            <div class="consult-main-wrapper">
 
+    <div class="consult-back-glass"></div>
 
+    <div class="consult-card-box">
 
-        <!-- =========================================
-RIGHT SIDE CARD SWAP SLIDER
-Replace your current .visual section with this
-========================================= -->
+        <h1 class="consult-heading">
+            Book Your <span class="consult-highlight"> Free </span> 
+            Consultation
+        </h1>
 
-        <!-- =========================================
-RIGHT SIDE ELEGANT CARD SWAP SLIDER
-REPLACE YOUR EXISTING .visual SECTION
-========================================= -->
-
-        <div class="visual">
-
-          <div class="card-slider">
-
-            <!-- CARD 1 -->
-
-            <div class="swap-card active">
-
-              <div class="card-glow"></div>
-
-              <div class="top-bar">
-                <div class="logo-mini">iogoos</div>
-
-                <div class="status">
-                  LIVE
-                </div>
-              </div>
-
-              <h2>
-                AI Powered <span>eCommerce Dashboard</span>
-              </h2>
-
-              <p>
-                Smart analytics, scalable architecture,
-                and real-time business growth insights.
-              </p>
-
-              <div class="analytics-grid">
-
-                <div class="analytic-box">
-                  <small>Total Sales</small>
-                  <h3>₹24.5 Cr</h3>
-                  <span class="green">↑ 32.6%</span>
-                </div>
-
-                <div class="analytic-box">
-                  <small>Users</small>
-                  <h3>18.6K</h3>
-                  <span class="green">↑ 28.4%</span>
-                </div>
-
-                <div class="analytic-box">
-                  <small>Revenue</small>
-                  <h3>₹8.6 Cr</h3>
-                  <span class="green">↑ 37.1%</span>
-                </div>
-
-                <div class="analytic-box chart-box">
-
-                  <div class="bars">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- CARD 2 -->
-
-            <div class="swap-card next">
-
-              <div class="mobile-ui">
-
-                <div class="mobile-header">
-                  Shop the Latest Trends
-                </div>
-
-                <input type="text" placeholder="Search products...">
-
-                <div class="mobile-categories">
-
-                  <div class="cat">👕</div>
-                  <div class="cat">🎧</div>
-                  <div class="cat">📱</div>
-                  <div class="cat">🏠</div>
-
-                </div>
-
-                <div class="product-grid">
-
-                  <div class="product-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=400&auto=format&fit=crop">
-                    <p>Smart Watch</p>
-                  </div>
-
-                  <div class="product-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop">
-                    <p>Headphones</p>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <!-- CARD 3 -->
-
-            <div class="swap-card prev">
-
-              <div class="saas-ui">
-
-                <div class="saas-top">
-
-                  <div>
-                    <small>PROJECTS</small>
-                    <h3>124+</h3>
-                  </div>
-
-                  <div class="purple-dot"></div>
-
-                </div>
-
-                <div class="progress-wrap">
-
-                  <div class="progress-item">
-                    <label>UI/UX Design</label>
-
-                    <div class="progress">
-                      <span style="width:92%"></span>
-                    </div>
-                  </div>
-
-                  <div class="progress-item">
-                    <label>Development</label>
-
-                    <div class="progress">
-                      <span style="width:86%"></span>
-                    </div>
-                  </div>
-
-                  <div class="progress-item">
-                    <label>Marketing</label>
-
-                    <div class="progress">
-                      <span style="width:76%"></span>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
+        <div class="consult-input-wrapper">
+            <i class="fa-regular fa-user"></i>
+            <input
+            class="consult-email-input"
+            type="text"
+            placeholder="Enter your Name">
         </div>
 
+        <div class="consult-input-wrapper">
+            <i class="fa-regular fa-envelope"></i>
+            <input
+            class="consult-email-input"
+            type="text"
+            placeholder="Enter your email">
+        </div>
+
+        <div class="consult-input-wrapper">
+            <div class="form-wrapper">
+            <select class="country-select">
+                <option>(+91)</option>
+                <option>(+1)</option>
+                <option>(+44)</option>
+                <option>(+61)</option>
+                <option>(+86)</option>
+                <option>(+81)</option>
+            </select>
+            <input class="name-input" type="text" placeholder="Phone Number">
+            </div>
+        </div>
+
+        <div class="consult-input-wrapper">
+            <i class="fa-solid fa-globe"></i>
+            <input
+            class="consult-email-input"
+            type="text"
+            placeholder="Website url">
+        </div>
+
+        <div class="txt-message">
+            <textarea placeholder="Enter your Message"></textarea>
+        </div>
+        <button class="consult-action-btn">
+            Book Free Consultation
+        </button>
+
+        <small class="consult-footer-note">
+            🔒 No spam. Just growth insights.
+        </small>
+
+    </div>
+
+</div>
+        </div>
 
         <!-- Right Side End-->
 
@@ -2122,15 +2128,73 @@ REPLACE YOUR EXISTING .visual SECTION
 
     <h4>TRUSTED BY BUSINESSES WORLDWIDE</h4>
 
-    <div class="brands">
-      <span>Swiggy</span>
-      <span>DECATHLON</span>
-      <span>tbo.com</span>
-      <span>CRED</span>
-      <span>Myntra</span>
-      <span>unacademy</span>
-      <span>OYO</span>
-      <span>makemytrip</span>
+        <div class="slider">
+
+        <div class="slide-track">
+
+            <div class="slide">
+                <img class="client-img" src="img/img1.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo1.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo3.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo4.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo5.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo6.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo7.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo8.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo9.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo11.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/img1.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo1.webp">
+            </div>
+
+             <div class="slide">
+                <img class="client-img" src="img/logo6.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo7.webp">
+            </div>
+
+            <div class="slide">
+                <img class="client-img" src="img/logo8.webp">
+            </div>
+
+
+        </div>
+
     </div>
 
     <p>
@@ -2142,129 +2206,6 @@ REPLACE YOUR EXISTING .visual SECTION
 
   </section>
 
+
 </body>
-<script>
-
-  /* =========================================
-  INTERACTIVE CARD SLIDER
-  ========================================= */
-
-  const cards = document.querySelectorAll(".swap-card");
-
-  let current = 0;
-  let autoPlay;
-
-  /* update */
-
-  function updateCards() {
-
-    cards.forEach((card, index) => {
-
-      card.classList.remove(
-        "active",
-        "next",
-        "prev"
-      );
-
-      if (index === current) {
-
-        card.classList.add("active");
-
-      }
-
-      else if (
-        index === (current + 1) % cards.length
-      ) {
-
-        card.classList.add("next");
-
-      }
-
-      else {
-
-        card.classList.add("prev");
-
-      }
-
-    });
-
-  }
-
-  /* next */
-
-  function nextCard() {
-
-    current++;
-
-    if (current >= cards.length) {
-      current = 0;
-    }
-
-    updateCards();
-
-  }
-
-  /* prev */
-
-  function prevCard() {
-
-    current--;
-
-    if (current < 0) {
-      current = cards.length - 1;
-    }
-
-    updateCards();
-
-  }
-
-  /* autoplay */
-
-  function startAutoPlay() {
-
-    autoPlay = setInterval(() => {
-
-      nextCard();
-
-    }, 4000);
-
-  }
-
-  function stopAutoPlay() {
-
-    clearInterval(autoPlay);
-
-  }
-
-  /* click swap */
-
-  cards.forEach((card) => {
-
-    card.addEventListener("click", () => {
-
-      if (card.classList.contains("next")) {
-
-        nextCard();
-
-      }
-
-      else if (card.classList.contains("prev")) {
-
-        prevCard();
-
-      }
-
-      stopAutoPlay();
-      startAutoPlay();
-
-    });
-
-  });
-
-  /* init */
-
-  updateCards();
-  startAutoPlay();
-</script>
-
 </html>
