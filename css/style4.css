@@ -2566,6 +2566,7 @@ background: linear-gradient(135deg, #3a91b1 0%, /* metallic shine */ #1E3A8A 18%
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    text-decoration: none;
 }
 
 .upw_card_box:hover {
