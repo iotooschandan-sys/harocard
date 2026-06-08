@@ -2715,6 +2715,151 @@ section.trusted {
     line-height:1.5;
 }
 
+/* portfolio css */
+
+/* Main Image */
+.image-card{
+    background: linear-gradient(135deg, #3a91b1 0%, /* metallic shine */ #1E3A8A 18%, /* dark blue */ #0F172A 38%, /* midnight blue */ #000000 55%, /* deep black */ #052E16 72%, /* dark emerald shadow */ #0F766E 88%, /* muted metallic green */ #A7F3D0 100% /* reflective highlight */);
+    border-radius:20px;
+    overflow:hidden;
+    height:100%;
+}
+
+.image-card img {
+    width: 102%;
+    height: 100%;
+    /* object-fit: contain; */
+    margin-left: -29px;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.image-card:hover img{
+  transform: scale(1.1);
+}
+
+/* Top Content Card */
+.content-card{
+    background:#fff;
+    border-radius:20px;
+    padding:25px;
+}
+
+.content-card h2{
+    font-size:48px;
+    margin-bottom:15px;
+    font-weight:500;
+}
+
+.content-card p {
+    color: #000;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.content-card .arrow{
+    font-size:24px;    
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+.content-card .arrow:hover{
+ background: linear-gradient(135deg, #3a91b1 0%, #1E3A8A 18%, #0F172A 38%, #000000 55%, #052E16 72%, #0F766E 88%, #A7F3D0 100%);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.tags span {
+    background: #f3eee8;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+/* Stats Card */
+.stats-card{
+    background:#f7efe6;
+    border-radius:20px;
+    padding:20px;
+    height:100%;
+}
+
+.portfolio-right .progress-bar {
+    background: #1E3A8A;
+}
+
+.stat-item {
+    background: #fff8f1;
+    border-radius: 10px;
+    padding: 9px;
+    margin-bottom: 9px;
+}
+
+.stat-item:last-child{
+    margin-bottom:0;
+}
+
+.portfolio-sec .progress{
+    height:4px;
+    margin-top:10px;
+}
+
+.progress-bar{
+    background:#f26432;
+}
+
+/* Testimonial */
+.testimonial-card {
+    background: linear-gradient(135deg, #3a91b1 0%, /* metallic shine */ #1E3A8A 18%, /* dark blue */ #0F172A 38%, /* midnight blue */ #000000 55%, /* deep black */ #052E16 72%, /* dark emerald shadow */ #0F766E 88%, /* muted metallic green */ #A7F3D0 100% /* reflective highlight */);
+    border-radius: 20px;
+    color: #fff;
+    padding: 14px;
+    height: 100%;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.testimonial-card p{
+    line-height:1.5;
+}
+
+.testimonial-card hr {
+    border-color: rgba(255,255,255,.4);
+    margin: 15px 0;
+}
+.testimonial-card h6 {
+    font-size: 15px;
+}
+.stat-item strong {
+    font-size: 14px;
+}
+.progress {
+    height: 5px;
+}
+.port-wrap {
+    display: grid;
+    grid-template-columns: 45% 52%;
+    gap: 30px;
+}
+/* portfolio css end */
 
 
 
