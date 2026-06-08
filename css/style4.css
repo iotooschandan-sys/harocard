@@ -2247,6 +2247,10 @@ img.p1-img {
 
 
 @media (max-width:575px) {
+
+  section {
+    padding: 40px 0;
+}
   .hero-section {
     padding: 40px 24px 160px;
   }
@@ -3045,6 +3049,23 @@ section.trusted {
   .hero-grid {
     gap: 0;
   }
+
+  .port-wrap {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.hero {
+    background: transparent;
+}
+.counter_container {
+    grid-template-columns: 1fr 1fr;
+}
+.counter_number {
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 10px;
+}
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
