@@ -2246,121 +2246,6 @@ img.p1-img {
 }
 
 
-@media (max-width:575px) {
-
-  section {
-    padding: 40px 0;
-}
-  .hero-section {
-    padding: 40px 24px 160px;
-  }
-
-  .service-card {
-    padding: 10px;
-  }
-
-  .img-wrap img {
-    width: 150px !important;
-  }
-
-  .service-content {
-    bottom: 65px;
-  }
-  .trusted-title h4 {
-    color: #fff !important;
-    font-size: 18px;
-}
-.upwork_stats_section {
-    gap: 30px;
-    padding: 0;
-}
-
-  .service-content h2 {
-    font-size: 30px;
-  }
-
-  .small {
-    min-height: 340px;
-  }
-
-  .wide {
-    min-height: 340px;
-  }
-
-  .wrapper1 {
-    display: grid;
-    padding: 10px;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .card-box {
-    width: 120px;
-    height: 120px;
-  }
-
-  .connector {
-    display: none;
-  }
-
-  .xl {
-    height: 480px;
-  }
-
-  .xlmb {
-    height: 315px !important;
-  }
-
-  .hero-content h1 {
-    font-size: 32px;
-  }
-
-  .large {
-    min-height: 315px;
-  }
-
-  .medium {
-    min-height: 370px;
-  }
-
-  .service-content {
-    left: 10px;
-  }
-
-  .service-content {
-    bottom: 24px;
-    padding-right: 10px;
-  }
-}
-
-@media (min-width:375px) and (max-width:769px) {
-  .hero-section {
-    padding: 50px 24px 160px;
-  }
-
-  .img-wrap img {
-    width: 290px;
-  }
-
-  .sm-cardimg img {
-    height: 190px;
-    object-fit: cover;
-  }
-
-  .small {
-    min-height: 345px;
-  }
-
-  .wide {
-    min-height: 375px;
-  }
-
-  .medium {
-    min-height: 350px;
-  }
-}
-
 
 
 
@@ -2872,8 +2757,129 @@ section.trusted {
 ====================================================================================================*/
 
 
+@media (max-width:575px) {
+
+
+}
+
+@media (min-width:375px) and (max-width:769px) {
+  .hero-section {
+    padding: 50px 24px 160px;
+  }
+
+  .img-wrap img {
+    width: 290px;
+  }
+
+  .sm-cardimg img {
+    height: 190px;
+    object-fit: cover;
+  }
+
+  .small {
+    min-height: 345px;
+  }
+
+  .wide {
+    min-height: 375px;
+  }
+
+  .medium {
+    min-height: 350px;
+  }
+}
+
 
 @media(max-width:575px) {
+
+    section {
+    padding: 40px 0;
+}
+  .hero-section {
+    padding: 40px 24px 160px;
+  }
+
+  .service-card {
+    padding: 10px;
+  }
+
+  .img-wrap img {
+    width: 150px !important;
+  }
+
+  .service-content {
+    bottom: 65px;
+  }
+  .trusted-title h4 {
+    color: #fff !important;
+    font-size: 18px;
+}
+.upwork_stats_section {
+    gap: 30px;
+    padding: 0;
+}
+
+  .service-content h2 {
+    font-size: 30px;
+  }
+
+  .small {
+    min-height: 340px;
+  }
+
+  .wide {
+    min-height: 340px;
+  }
+
+  .wrapper1 {
+    display: grid;
+    padding: 10px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .card-box {
+    width: 120px;
+    height: 120px;
+  }
+
+  .connector {
+    display: none;
+  }
+
+  .xl {
+    height: 480px;
+  }
+
+  .xlmb {
+    height: 315px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .large {
+    min-height: 315px;
+  }
+
+  .medium {
+    min-height: 370px;
+  }
+
+  .service-content {
+    left: 10px;
+  }
+
+  .service-content {
+    bottom: 24px;
+    padding-right: 10px;
+  }
+
+  .upwork_stat_card p {
+    font-size: 16px;
+}
   ul.email-lst {
     display: grid;
     margin: 0;
