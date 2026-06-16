@@ -1,248 +1,379 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study Section</title>
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<style>
-body{
-    background:#f3f3f3;
-    padding:30px;
-}
+<section class="scale-services-sec">
+    <div class="container">
 
-/* Main Image */
-.image-card{
-    background:linear-gradient(180deg,#ff7b42,#f26432);
-    border-radius:20px;
-    overflow:hidden;
-    height:100%;
-}
-
-.image-card img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-/* Top Content Card */
-.content-card{
-    background:#fff;
-    border-radius:20px;
-    padding:25px;
-}
-
-.content-card h2{
-    font-size:48px;
-    margin-bottom:15px;
-    font-weight:500;
-}
-
-.content-card p{
-    color:#666;
-    line-height:1.7;
-}
-
-.arrow{
-    font-size:24px;
-}
-
-.tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:20px;
-}
-
-.tags span{
-    background:#f3eee8;
-    padding:8px 15px;
-    border-radius:30px;
-    font-size:14px;
-}
-
-/* Stats Card */
-.stats-card{
-    background:#f7efe6;
-    border-radius:20px;
-    padding:20px;
-    height:100%;
-}
-
-.stat-item{
-    background:#fff8f1;
-    border-radius:10px;
-    padding:12px;
-    margin-bottom:15px;
-}
-
-.stat-item:last-child{
-    margin-bottom:0;
-}
-
-.progress{
-    height:4px;
-    margin-top:10px;
-}
-
-.progress-bar{
-    background:#f26432;
-}
-
-/* Testimonial */
-.testimonial-card{
-    background:#f26432;
-    border-radius:20px;
-    color:#fff;
-    padding:25px;
-    height:100%;
-}
-
-.stars{
-    color:#ffd700;
-    font-size:20px;
-    margin-bottom:20px;
-}
-
-.testimonial-card p{
-    line-height:1.8;
-}
-
-.testimonial-card hr{
-    border-color:rgba(255,255,255,.4);
-    margin:30px 0;
-}
-
-@media(max-width:991px){
-    .content-card h2{
-        font-size:36px;
-    }
-}
-</style>
-</head>
-<body>
-
-<div class="container-fluid">
-    <div class="row g-4">
-
-        <!-- Left Image -->
-        <div class="col-lg-6">
-            <div class="image-card">
-                <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?q=80&w=1200" alt="">
-            </div>
+        <div class="scale-services-head">
+            <h2>Everything you need to <br> launch, grow and scale</h2>
         </div>
 
-        <!-- Right Content -->
-        <div class="col-lg-6">
+        <div class="row g-4">
 
-            <div class="content-card mb-4">
-                <div class="d-flex justify-content-between align-items-start">
-                    <h2>RANDOLPH</h2>
-                    <span class="arrow">↗</span>
-                </div>
+            <!-- Card 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="scale-service-card service-violet">
 
-                <p>
-                    Randolph partnered with us to modernise their Shopify
-                    experience, transitioning to a scalable Shopify 2.0
-                    architecture while improving accessibility,
-                    performance, and data accuracy. The focus was on
-                    balancing a premium brand aesthetic with a faster,
-                    more conversion-focused user journey.
-                </p>
+                    <div class="service-top-icon violet-bg">
+                        <i class="fas fa-code"></i>
+                    </div>
 
-                <div class="tags">
-                    <span>Shopify Plus</span>
-                    <span>UI/UX</span>
-                    <span>Accessibility</span>
-                    <span>Data & Analytics</span>
-                    <span>Performance</span>
+                    <h4>Web Development</h4>
+
+                    <p>
+                        Fast, secure & scalable websites built to convert.
+                    </p>
+
+                    <div class="service-widget-box">
+                        <div class="website-ui">
+                            <div class="ui-header"></div>
+                            <div class="ui-line"></div>
+                            <div class="ui-line short"></div>
+
+                            <a href="#" class="ui-btn">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="row g-4">
+            <!-- Card 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="scale-service-card service-pink">
 
-                <!-- Stats -->
-                <div class="col-md-7">
-                    <div class="stats-card">
+                    <div class="service-top-icon pink-bg">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
 
-                        <div class="stat-item">
-                            <div class="d-flex justify-content-between">
-                                <strong>Revenue increased by</strong>
-                                <span>↑ 17%</span>
-                            </div>
+                    <h4>E-commerce Solutions</h4>
 
-                            <div class="progress">
-                                <div class="progress-bar" style="width:17%"></div>
-                            </div>
-                        </div>
+                    <p>
+                        Custom online stores that deliver seamless shopping experiences.
+                    </p>
 
-                        <div class="stat-item">
-                            <div class="d-flex justify-content-between">
-                                <strong>Conversion Rate increased by</strong>
-                                <span>↑ 31%</span>
-                            </div>
+                    <div class="service-widget-box">
 
-                            <div class="progress">
-                                <div class="progress-bar" style="width:31%"></div>
-                            </div>
-                        </div>
+                        <div class="product-widget">
+                            <span class="tag">New Arrivals</span>
 
-                        <div class="stat-item">
-                            <div class="d-flex justify-content-between">
-                                <strong>AOV increased by</strong>
-                                <span>↑ 7%</span>
-                            </div>
+                            <div class="product-preview">
+                                <div class="product-image"></div>
 
-                            <div class="progress">
-                                <div class="progress-bar" style="width:7%"></div>
-                            </div>
-                        </div>
-
-                        <div class="stat-item">
-                            <div class="d-flex justify-content-between">
-                                <strong>Returning Customers increased by</strong>
-                                <span>↑ 14%</span>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress-bar" style="width:14%"></div>
+                                <div>
+                                    <h6>Modern Chair</h6>
+                                    <span>$89.00</span>
+                                </div>
                             </div>
                         </div>
 
                     </div>
+
                 </div>
+            </div>
 
-                <!-- Testimonial -->
-                <div class="col-md-5">
-                    <div class="testimonial-card">
+            <!-- Card 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="scale-service-card service-orange">
 
-                        <div class="stars">
-                            ★★★★★
+                    <div class="service-top-icon orange-bg">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+
+                    <h4>Digital Marketing</h4>
+
+                    <p>
+                        Data-driven strategies that bring traffic, leads and sales.
+                    </p>
+
+                    <div class="service-widget-box">
+
+                        <div class="revenue-widget">
+
+                            <small>Total Revenue</small>
+
+                            <h3>$24,890</h3>
+
+                            <div class="growth-line">
+                                <span></span>
+                            </div>
+
                         </div>
 
-                        <p>
-                            “MOBIKASA's support enabled us to launch
-                            products and campaigns on time. Their
-                            responsiveness and flexibility have been
-                            the most impressive part of our
-                            partnership.”
-                        </p>
+                    </div>
 
-                        <hr>
+                </div>
+            </div>
 
-                        <h6>RANDOLPH Team</h6>
+            <!-- Card 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="scale-service-card service-blue">
+
+                    <div class="service-top-icon blue-bg">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+
+                    <h4>Performance Marketing</h4>
+
+                    <p>
+                        ROI-focused campaigns that scale your business growth.
+                    </p>
+
+                    <div class="service-widget-box">
+
+                        <div class="chart-widget">
+
+                            <div class="chart-bars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                        </div>
 
                     </div>
-                </div>
 
+                </div>
             </div>
 
         </div>
 
     </div>
-</div>
+</section>
 
-</body>
-</html>
+<style>
+
+.scale-services-sec{
+    padding:100px 0;
+    background:#fff;
+}
+
+.scale-services-head{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.scale-services-head h2{
+    font-size:58px;
+    line-height:1.15;
+    font-weight:700;
+    color:#111827;
+}
+
+.scale-service-card{
+    border-radius:28px;
+    padding:30px 24px;
+    height:100%;
+    min-height:470px;
+}
+
+.service-violet{
+    background:#f4f0ff;
+}
+
+.service-pink{
+    background:#fff1f7;
+}
+
+.service-orange{
+    background:#fff8eb;
+}
+
+.service-blue{
+    background:#f1f5ff;
+}
+
+.service-top-icon{
+    width:64px;
+    height:64px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:22px;
+    margin-bottom:22px;
+}
+
+.violet-bg{
+    background:#7c4dff;
+}
+
+.pink-bg{
+    background:#ff4ea3;
+}
+
+.orange-bg{
+    background:#ff9800;
+}
+
+.blue-bg{
+    background:#4f7cff;
+}
+
+.scale-service-card h4{
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.scale-service-card p{
+    font-size:15px;
+    color:#6b7280;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.service-widget-box{
+    background:#fff;
+    border-radius:20px;
+    padding:18px;
+    min-height:180px;
+    box-shadow:0 20px 40px rgba(0,0,0,.06);
+}
+
+/* Card 1 Widget */
+
+.ui-header{
+    width:100%;
+    height:14px;
+    background:#ececec;
+    border-radius:20px;
+    margin-bottom:15px;
+}
+
+.ui-line{
+    width:100%;
+    height:10px;
+    background:#ececec;
+    border-radius:20px;
+    margin-bottom:10px;
+}
+
+.ui-line.short{
+    width:70%;
+}
+
+.ui-btn{
+    display:inline-block;
+    margin-top:18px;
+    background:#7c4dff;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:13px;
+}
+
+/* Card 2 Widget */
+
+.tag{
+    display:inline-block;
+    background:#ffe6f3;
+    color:#ff4ea3;
+    padding:6px 12px;
+    border-radius:30px;
+    font-size:12px;
+}
+
+.product-preview{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.product-image{
+    width:80px;
+    height:80px;
+    background:#efefef;
+    border-radius:12px;
+}
+
+.product-preview h6{
+    margin:0;
+    font-weight:700;
+}
+
+/* Card 3 Widget */
+
+.revenue-widget h3{
+    margin-top:8px;
+    font-size:30px;
+    font-weight:700;
+}
+
+.growth-line{
+    margin-top:25px;
+    height:55px;
+    position:relative;
+}
+
+.growth-line span{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(90deg,#ffae42,#ff4ea3);
+    clip-path:polygon(
+    0 90%,
+    15% 70%,
+    35% 78%,
+    50% 45%,
+    65% 60%,
+    80% 25%,
+    100% 0,
+    100% 100%,
+    0 100%);
+}
+
+/* Card 4 Widget */
+
+.chart-bars{
+    height:120px;
+    display:flex;
+    align-items:flex-end;
+    gap:10px;
+}
+
+.chart-bars span{
+    flex:1;
+    background:#4f7cff;
+    border-radius:8px 8px 0 0;
+}
+
+.chart-bars span:nth-child(1){height:25%;}
+.chart-bars span:nth-child(2){height:45%;}
+.chart-bars span:nth-child(3){height:75%;}
+.chart-bars span:nth-child(4){height:50%;}
+.chart-bars span:nth-child(5){height:100%;}
+.chart-bars span:nth-child(6){height:65%;}
+
+@media(max-width:991px){
+
+    .scale-services-head h2{
+        font-size:42px;
+    }
+
+    .scale-service-card{
+        min-height:auto;
+    }
+}
+
+@media(max-width:767px){
+
+    .scale-services-sec{
+        padding:70px 0;
+    }
+
+    .scale-services-head h2{
+        font-size:32px;
+    }
+}
+
+</style>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
