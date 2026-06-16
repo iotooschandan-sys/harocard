@@ -47,7 +47,7 @@ background: #02090a !important;
 .hero {
     position: relative;
     overflow: hidden;
-    padding: 60px 0 40px;
+    padding: 60px 0 0px;
     /* background: radial-gradient(circle at 75% 25%, rgba(115, 62, 255, 0.45), transparent 28%), radial-gradient(circle at 30% 70%, rgba(67, 31, 182, 0.20), transparent 32%), #050114; */
     background-image: url('../img/banner1.png');
     background-size: 104%;
@@ -826,17 +826,11 @@ ul.email-lst li {
 .trusted-title {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   gap: 30px;
 }
 
-.trusted-title::before,
-.trusted-title::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  background: #d8d8d8;
-}
+
 
 .trusted-title h4 {
   margin: 0;
@@ -2479,31 +2473,14 @@ img.p1-img {
     inset 0 1px 1px rgba(255, 255, 255, .15);
     border-radius: 42px 42px 0 0;
     margin: 50px 0;
-    /* background:
-radial-gradient(circle at 55% 35%, rgba(37,105,170,0.9) 0%, rgba(7,27,70,0.85) 28%, rgba(0,0,0,1) 55%),
-linear-gradient(90deg, #000000 0%, #02153d 45%, #1e6d88 72%, #35e873 100%); */
 
-/* background:
-    
-    radial-gradient(
-        ellipse at 55% 22%,
-        rgba(70,145,255,.95) 0%,
-        rgba(22,84,180,.85) 18%,
-        rgba(5,28,88,.55) 38%,
-        transparent 65%
-    ),
-
-    linear-gradient(
-        90deg,
-        #000000 0%,
-        #000000 26%,
-        #00113a 46%,
-        #0b3e74 62%,
-        #20a7a5 82%,
-        #2dee67 100%
-    ); */
 
 background: linear-gradient(135deg, #3a91b1 0%, /* metallic shine */ #1E3A8A 18%, /* dark blue */ #0F172A 38%, /* midnight blue */ #000000 55%, /* deep black */ #052E16 72%, /* dark emerald shadow */ #0F766E 88%, /* muted metallic green */ #A7F3D0 100% /* reflective highlight */);
+
+ /* background:
+    radial-gradient(circle at 0% 0%, #1c8fe8 0%, #0d4fb8 18%, rgba(13,79,184,.35) 35%, transparent 55%),
+    radial-gradient(circle at 100% 100%, #00c97a 0%, rgba(0,201,122,.45) 20%, rgba(0,201,122,.15) 35%, transparent 55%),
+    linear-gradient(90deg, #072a73 0%, #02154a 25%, #010814 55%, #01110f 75%, #01352b 100%); */
 }
 
 
@@ -2557,6 +2534,10 @@ background: linear-gradient(135deg, #3a91b1 0%, /* metallic shine */ #1E3A8A 18%
     padding-top: 15px;
 }
 
+.upw_text_wrap h5 {
+    color: #fff;
+}
+
 .upw_card_box {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
@@ -2580,13 +2561,28 @@ background: linear-gradient(135deg, #3a91b1 0%, /* metallic shine */ #1E3A8A 18%
 
 
 .upw_icon_wrap img {
-    width: 100px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+}
+.d-width img{
+  height: 80px !important;
+}
+.upw_icon_wrap.d-width {
+    border: navajowhite;
+}
+.upw_icon_wrap {
+    border: 1px solid #3a91b1;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-content: center;
+    padding: 13px;
 }
 
 .upw_text_wrap h4 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 8px;
   color: #ffff;
@@ -2627,7 +2623,7 @@ background: linear-gradient(135deg, #3a91b1 0%, /* metallic shine */ #1E3A8A 18%
     margin-bottom: 0;
 }
 .upwork_stats_section .upwork_stat_card:first-child {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgb(255 255 255 / 22%);
     padding-top: 0;
     padding-bottom: 25px;
 }
