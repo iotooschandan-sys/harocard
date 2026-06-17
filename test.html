@@ -1,379 +1,122 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<section class="scale-services-sec">
-    <div class="container">
-
-        <div class="scale-services-head">
-            <h2>Everything you need to <br> launch, grow and scale</h2>
-        </div>
-
-        <div class="row g-4">
-
-            <!-- Card 1 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="scale-service-card service-violet">
-
-                    <div class="service-top-icon violet-bg">
-                        <i class="fas fa-code"></i>
-                    </div>
-
-                    <h4>Web Development</h4>
-
-                    <p>
-                        Fast, secure & scalable websites built to convert.
-                    </p>
-
-                    <div class="service-widget-box">
-                        <div class="website-ui">
-                            <div class="ui-header"></div>
-                            <div class="ui-line"></div>
-                            <div class="ui-line short"></div>
-
-                            <a href="#" class="ui-btn">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="scale-service-card service-pink">
-
-                    <div class="service-top-icon pink-bg">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-
-                    <h4>E-commerce Solutions</h4>
-
-                    <p>
-                        Custom online stores that deliver seamless shopping experiences.
-                    </p>
-
-                    <div class="service-widget-box">
-
-                        <div class="product-widget">
-                            <span class="tag">New Arrivals</span>
-
-                            <div class="product-preview">
-                                <div class="product-image"></div>
-
-                                <div>
-                                    <h6>Modern Chair</h6>
-                                    <span>$89.00</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="scale-service-card service-orange">
-
-                    <div class="service-top-icon orange-bg">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-
-                    <h4>Digital Marketing</h4>
-
-                    <p>
-                        Data-driven strategies that bring traffic, leads and sales.
-                    </p>
-
-                    <div class="service-widget-box">
-
-                        <div class="revenue-widget">
-
-                            <small>Total Revenue</small>
-
-                            <h3>$24,890</h3>
-
-                            <div class="growth-line">
-                                <span></span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="scale-service-card service-blue">
-
-                    <div class="service-top-icon blue-bg">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-
-                    <h4>Performance Marketing</h4>
-
-                    <p>
-                        ROI-focused campaigns that scale your business growth.
-                    </p>
-
-                    <div class="service-widget-box">
-
-                        <div class="chart-widget">
-
-                            <div class="chart-bars">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
+<div class="analytics-card">
+    <div class="logo">
+        <span>wakefit</span>
     </div>
-</section>
+
+    <div class="tag">Performance Marketing</div>
+
+    <div class="divider"></div>
+
+    <div class="content">
+        <p class="label">Increased ROAS by</p>
+        <h2>2.6X</h2>
+        <p class="sub-text">within 6 months</p>
+    </div>
+
+    <div class="graph">
+        <svg viewBox="0 0 300 120" preserveAspectRatio="none">
+            <path
+                d="M0 100 
+                   C30 98 45 98 60 95
+                   C80 92 95 75 115 82
+                   C130 88 145 80 160 45
+                   C175 20 190 35 210 35
+                   C230 35 245 10 260 0
+                   C275 0 290 -5 300 -10"
+                fill="none"
+                stroke="#b14cff"
+                stroke-width="4"
+                stroke-linecap="round"
+            />
+        </svg>
+    </div>
+</div>
 
 <style>
 
-.scale-services-sec{
-    padding:100px 0;
-    background:#fff;
+.analytics-card {
+    position: relative;
+    width: 260px;
+    height: 250px;
+    padding: 24px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(
+        180deg,
+        #07081b 0%,
+        #09071f 100%
+    );
+    border: 1px solid rgba(255,255,255,0.06);
 }
 
-.scale-services-head{
-    text-align:center;
-    margin-bottom:60px;
+.logo span {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
 }
 
-.scale-services-head h2{
-    font-size:58px;
-    line-height:1.15;
-    font-weight:700;
-    color:#111827;
+.tag {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 6px 12px;
+    font-size: 12px;
+    color: #c9b8ff;
+    background: rgba(177,76,255,0.12);
+    border-radius: 20px;
 }
 
-.scale-service-card{
-    border-radius:28px;
-    padding:30px 24px;
-    height:100%;
-    min-height:470px;
+.divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.08);
+    margin: 22px 0;
 }
 
-.service-violet{
-    background:#f4f0ff;
+.label {
+    margin: 0;
+    color: #9c9cb1;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
-.service-pink{
-    background:#fff1f7;
+.content h2 {
+    margin: 6px 0;
+    color: #fff;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1;
 }
 
-.service-orange{
-    background:#fff8eb;
+.sub-text {
+    margin: 0;
+    color: #9c9cb1;
+    font-size: 13px;
 }
 
-.service-blue{
-    background:#f1f5ff;
+.graph {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 95px;
 }
 
-.service-top-icon{
-    width:64px;
-    height:64px;
-    border-radius:18px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#fff;
-    font-size:22px;
-    margin-bottom:22px;
+.graph svg {
+    width: 100%;
+    height: 100%;
 }
 
-.violet-bg{
-    background:#7c4dff;
+.graph::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at center,
+        rgba(177,76,255,0.35),
+        transparent 70%
+    );
+    filter: blur(25px);
 }
-
-.pink-bg{
-    background:#ff4ea3;
-}
-
-.orange-bg{
-    background:#ff9800;
-}
-
-.blue-bg{
-    background:#4f7cff;
-}
-
-.scale-service-card h4{
-    font-size:22px;
-    font-weight:700;
-    margin-bottom:12px;
-}
-
-.scale-service-card p{
-    font-size:15px;
-    color:#6b7280;
-    line-height:1.7;
-    margin-bottom:30px;
-}
-
-.service-widget-box{
-    background:#fff;
-    border-radius:20px;
-    padding:18px;
-    min-height:180px;
-    box-shadow:0 20px 40px rgba(0,0,0,.06);
-}
-
-/* Card 1 Widget */
-
-.ui-header{
-    width:100%;
-    height:14px;
-    background:#ececec;
-    border-radius:20px;
-    margin-bottom:15px;
-}
-
-.ui-line{
-    width:100%;
-    height:10px;
-    background:#ececec;
-    border-radius:20px;
-    margin-bottom:10px;
-}
-
-.ui-line.short{
-    width:70%;
-}
-
-.ui-btn{
-    display:inline-block;
-    margin-top:18px;
-    background:#7c4dff;
-    color:#fff;
-    text-decoration:none;
-    padding:10px 18px;
-    border-radius:30px;
-    font-size:13px;
-}
-
-/* Card 2 Widget */
-
-.tag{
-    display:inline-block;
-    background:#ffe6f3;
-    color:#ff4ea3;
-    padding:6px 12px;
-    border-radius:30px;
-    font-size:12px;
-}
-
-.product-preview{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    margin-top:20px;
-}
-
-.product-image{
-    width:80px;
-    height:80px;
-    background:#efefef;
-    border-radius:12px;
-}
-
-.product-preview h6{
-    margin:0;
-    font-weight:700;
-}
-
-/* Card 3 Widget */
-
-.revenue-widget h3{
-    margin-top:8px;
-    font-size:30px;
-    font-weight:700;
-}
-
-.growth-line{
-    margin-top:25px;
-    height:55px;
-    position:relative;
-}
-
-.growth-line span{
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:linear-gradient(90deg,#ffae42,#ff4ea3);
-    clip-path:polygon(
-    0 90%,
-    15% 70%,
-    35% 78%,
-    50% 45%,
-    65% 60%,
-    80% 25%,
-    100% 0,
-    100% 100%,
-    0 100%);
-}
-
-/* Card 4 Widget */
-
-.chart-bars{
-    height:120px;
-    display:flex;
-    align-items:flex-end;
-    gap:10px;
-}
-
-.chart-bars span{
-    flex:1;
-    background:#4f7cff;
-    border-radius:8px 8px 0 0;
-}
-
-.chart-bars span:nth-child(1){height:25%;}
-.chart-bars span:nth-child(2){height:45%;}
-.chart-bars span:nth-child(3){height:75%;}
-.chart-bars span:nth-child(4){height:50%;}
-.chart-bars span:nth-child(5){height:100%;}
-.chart-bars span:nth-child(6){height:65%;}
-
-@media(max-width:991px){
-
-    .scale-services-head h2{
-        font-size:42px;
-    }
-
-    .scale-service-card{
-        min-height:auto;
-    }
-}
-
-@media(max-width:767px){
-
-    .scale-services-sec{
-        padding:70px 0;
-    }
-
-    .scale-services-head h2{
-        font-size:32px;
-    }
-}
-
 </style>
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
