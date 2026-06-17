@@ -2944,7 +2944,6 @@ section.trusted {
 
 .trust-section{
     position:relative;
-    padding:80px 20px;
     overflow:hidden;
 }
 
@@ -3001,7 +3000,7 @@ section.trusted {
 
 .left-content h1{
     color:#fff;
-    font-size:72px;
+    font-size:60px;
     line-height:1.1;
     font-weight:700;
     margin-bottom:25px;
@@ -3231,7 +3230,6 @@ section.trusted {
 /* scable csss card =====================================*/
 
 .scale-services-sec {
-    padding: 100px 0;
     background: #fff;
 }
 .scale-services-head {

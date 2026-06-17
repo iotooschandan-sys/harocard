@@ -1,4 +1,24 @@
 
+@media(min-width:575px) and (max-width:769px){
+    section{
+        overflow: hidden !important;
+    }
+    .awards-grid {
+    grid-template-columns: repeat(2,1fr);
+}
+.top-content {
+    grid-template-columns: 1fr;
+        gap: 15px;
+
+}
+.left-content h1 {
+    font-size: 50px;
+}
+.stats {
+    width: 70%;
+}
+}
+
 
 @media(max-width:575px) {
 
@@ -23,6 +43,79 @@ h2 {
 .trusted {
     padding: 0;
     margin: 12px 0px;
+}
+
+.top-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 20px;
+}
+.over-lap-txt p {
+    font-size: 12px;
+}
+.nx-preview-grid {
+    grid-template-columns: 1fr;
+}
+.nx-brand-preview {
+    grid-template-columns: 1fr;
+}
+.growth-stats-grid {
+    margin-top: 0;
+    grid-template-columns: 1fr 1fr;
+}
+.growth-stat-card {
+    padding: 10px;
+}
+.stat-box .icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 13px 0;
+    font-size: 22px;
+}
+.stat-box p {
+    font-size: 15px;
+    padding-left: 8px;
+}
+.awards-grid {    
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.award-card {
+    gap: 10px;
+    padding: 10px;
+    min-height: 100%;
+}
+.award-logo {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+}
+.year {
+    font-size: 10px;
+    padding: 6px 10px;
+}
+.bottom-text {
+    margin-top: 18px;
+    font-size: 15px;
+}
+.award-card h3 {
+    font-size: 18px;
+}
+.award-card p {
+    font-size: 14px;
+}
+
+.left-content h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.trust-badge {
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+.left-content p {
+    font-size: 15px;
 }
 .portfolio-swiper .swiper-wrapper {
     padding-top: 50px;
