@@ -3689,6 +3689,9 @@ section.growth-stats-section {
     font-weight: bold;
 }
 
+.mb{
+  display: none;
+}
 
 
 /*  ====================================================================================================
@@ -3752,8 +3755,9 @@ section.growth-stats-section {
   }
   .trusted-title span {
     color: #fff !important;
-    font-size: 18px;
+    font-size: 12px;
 }
+
 .upwork_stats_section {
     gap: 30px;
     padding: 0;
