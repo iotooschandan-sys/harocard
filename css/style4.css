@@ -47,7 +47,7 @@ background: #02090a !important;
 .hero {
     position: relative;
     overflow: hidden;
-    padding: 60px 0 0px;
+    padding: 60px 0 70px;
     /* background: radial-gradient(circle at 75% 25%, rgba(115, 62, 255, 0.45), transparent 28%), radial-gradient(circle at 30% 70%, rgba(67, 31, 182, 0.20), transparent 32%), #050114; */
     background-image: url('../img/banner1.png');
     background-size: 104%;
@@ -815,7 +815,7 @@ ul.email-lst {
    TRUSTED
 ========================= */
 .trusted {
-    padding: 20px 40px 1px;
+    padding: 55px 40px 1px;
     text-align: center;
 }
 ul.email-lst li {
@@ -2405,7 +2405,7 @@ img.p1-img {
     inset: 0; /* full width & height */
 
     background: #f4efe8;
-    padding: 24px;
+    padding: 10px;
 
     opacity: 0;
     visibility: hidden;
@@ -2761,13 +2761,54 @@ section.trusted {
     height:100%;
 }
 
-.over-lap-txt {
-    background: #ffffffbf;
-    position: absolute;
-    bottom: 0;
-    padding: 15px;
-    border-radius: 0 0 20px 20px;
+
+
+
+.custom-card-wrap{
+    position:relative;
 }
+
+.custom-service-box{
+    width:100%;
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    overflow:hidden;
+    position:absolute;
+    bottom:0; /* bottom fix */
+    left:0;
+    transition:height .5s ease;
+    height:80px; /* initial height */
+    cursor: pointer;
+}
+
+.custom-service-box:hover{
+    height:180px; /* expand upward */
+}
+
+.custom-service-box h3{
+    margin:0;
+    color: #052351;
+}
+.custom-service-content p {
+    color: #525252;
+}
+.custom-service-content{
+    opacity:0;
+    margin-top:15px;
+    transition:opacity .3s ease .2s;
+}
+
+.custom-service-box:hover .custom-service-content{
+    opacity:1;
+}
+
+
+
+
+
+
 .portfolio-left {
     position: relative;
 }
@@ -2790,18 +2831,38 @@ section.trusted {
     background:#fff;
     border-radius:20px;
     padding:25px;
+    position: relative;
 }
-
+.arrow i:first-child {
+    margin-right: -8px;
+}
 .content-card h2{
     font-size:48px;
     margin-bottom:15px;
     font-weight:500;
+    color: #052351;
 }
 
 .content-card p {
-    color: #000;
+    color: #525252;
     line-height: 1.7;
     font-size: 14px;
+}
+
+span.arrow.pf-arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 22px;
+      font-size: 15px;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+    display: block;
+    transform: rotate(-140deg);
+}
+span.arrow.pf-arrow:hover{
+   transition: 1s;
+    transform: scale(1.5);
+    transform: rotate(-140deg);
 }
 
 .content-card .arrow{
@@ -2814,16 +2875,7 @@ section.trusted {
     transition: 1s;
     margin-top: 12px;
 }
-.content-card .arrow:hover{
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-content: center;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 1s;
-    transform: scale(1.5);
-}
+
 .tags{
     display:flex;
     flex-wrap:wrap;
@@ -2834,8 +2886,14 @@ section.trusted {
 .tags span {
     padding: 6px 12px;
     font-size: 13px;
-    border: 1px solid #000;
-    border-radius:5px;
+    border-radius: 5px;
+    border: 1px solid #131696;
+    color: #131696;
+    transition: all 0.3s ease;
+}
+
+.tags span:hover{
+   transform: translateY(-3px) scale(1.05);
 }
 
 /* Stats Card */
@@ -2848,7 +2906,7 @@ section.trusted {
 
 
 .portfolio-right .progress-bar {
-    background: #1E3A8A;
+    background: #052351;
 }
 
 .stat-item {
@@ -2945,6 +3003,13 @@ section.trusted {
 .trust-section{
     position:relative;
     overflow:hidden;
+    border-radius: 42px;
+    background: radial-gradient(
+    circle at 0% 0%,
+    rgba(28,94,255,.65) 0%,
+    rgba(28,94,255,.35) 15%,
+    transparent 55%
+), radial-gradient(circle at right center, rgba(0, 255, 136, 0.18) 0%, rgba(0, 255, 136, 0.08) 25%, transparent 50%), linear-gradient(90deg, #081426 0%, #030915 40%, #02060d 65%, #03120d 100%);
 }
 
 .trust-section::before{
@@ -2985,17 +3050,23 @@ section.trusted {
     align-items:center;
     margin-bottom:60px;
 }
+span.trust-badge span {
+    font-size: 19px;
+    color: #73fd20;
+}
 
-.trust-badge{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:12px 25px;
-    border:1px solid rgba(255,255,255,.15);
-    border-radius:50px;
-    color:#fff;
-    backdrop-filter:blur(10px);
-    margin-bottom:25px;
+.trust-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 25px;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 50px;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    margin-bottom: 25px;
+    font-size: 13px;
+    box-shadow: 0 0 0px rgba(0, 170, 255, 0.4), 0 0 20px rgba(0, 170, 255, 0.2), inset 0 0 8px rgba(255, 255, 255, 0.1);
 }
 
 .left-content h1{
@@ -3028,22 +3099,23 @@ section.trusted {
     padding-top: 15px;
 }
 
-.stats .stat-box:first-child{
-  border-top: none;
+.stats .stat-box:first-child {
+    border-top: none;
+    padding-bottom: 15px;
 }
 
 .stat-box .icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    margin: auto;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 35px;
+    font-size: 24px;
     border: 1px solid rgba(255,255,255,.15);
     background: rgba(255,255,255,.03);
-    margin-bottom: 20px;
+    margin-right: 15px;
 }
 
 .stat-box h2{
@@ -3061,22 +3133,44 @@ section.trusted {
 .awards-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:25px;
+    gap:15px;
 }
-
+.award-card h4 {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+}
 .award-card{
     position:relative;
     display:flex;
     align-items:center;
     gap:20px;
-    padding:30px;
+    padding:25px;
     border-radius:24px;
     background:rgba(255,255,255,.03);
     backdrop-filter:blur(20px);
-    border:1px solid rgba(255,255,255,.08);
-    min-height:170px;
+    border: 1px solid rgb(39 83 177 / 22%);
     transition:.4s;
+    overflow:hidden;
 }
+
+.award-card::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    width: 160px;
+    height: 111px;
+    background: radial-gradient(circle, rgba(0,212,255,.5) 1px, transparent 1.5px);
+    background-size: 10px 10px;
+    border-radius: 50%;
+    opacity: .35;
+    transform: rotate(-20deg);
+    mask-image: radial-gradient(circle, #000 45%, transparent 80%);
+    -webkit-mask-image: radial-gradient(circle, #000 45%, transparent 80%);
+}
+
+
 
 .award-card:hover{
     transform:translateY(-8px);
@@ -3101,7 +3195,7 @@ section.trusted {
 .award-card h3{
     color:#fff;
     margin-bottom:8px;
-    font-size:28px;
+    font-size:22px;
     padding-top: 15px;
 }
 
@@ -3110,38 +3204,52 @@ section.trusted {
     line-height:1.5;
 }
 
-.year{
-    position:absolute;
-    top:18px;
-    right:18px;
-    border:1px solid rgba(255,255,255,.15);
-    padding:8px 15px;
-    border-radius:30px;
-    color:#fff;
+.year {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    border: 1px solid rgba(255,255,255,.15);
+    padding: 2px 11px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
 }
 
-.bottom-text{
-    text-align:center;
-    color:#fff;
-    margin-top:50px;
-    font-size:26px;
+.bottom-text {
+    color: #fff;
+    margin-top: 50px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }
 
 .bottom-text span{
     color:#00e5ff;
 }
+.team-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #07142c;
+    border: 2px solid rgba(255,255,255,0.15);
+    box-shadow:
+        0 0 15px rgba(0, 255, 255, 0.15),
+        inset 0 0 10px rgba(255,255,255,0.05);
+}
 
+.team-icon i{
+    font-size: 14px;
+}
 .bottom-text strong{
-    background:linear-gradient(
-        90deg,
-        #00e5ff,
-        #7cff6b,
-        #bb5cff
-    );
+    background: linear-gradient(90deg, #2563ff, #d946ef);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
-
 .growth-showcase-card {
     position: relative;
     width: 100%;

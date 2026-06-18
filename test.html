@@ -1,122 +1,72 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<div class="analytics-card">
-    <div class="logo">
-        <span>wakefit</span>
-    </div>
-
-    <div class="tag">Performance Marketing</div>
-
-    <div class="divider"></div>
-
-    <div class="content">
-        <p class="label">Increased ROAS by</p>
-        <h2>2.6X</h2>
-        <p class="sub-text">within 6 months</p>
-    </div>
-
-    <div class="graph">
-        <svg viewBox="0 0 300 120" preserveAspectRatio="none">
-            <path
-                d="M0 100 
-                   C30 98 45 98 60 95
-                   C80 92 95 75 115 82
-                   C130 88 145 80 160 45
-                   C175 20 190 35 210 35
-                   C230 35 245 10 260 0
-                   C275 0 290 -5 300 -10"
-                fill="none"
-                stroke="#b14cff"
-                stroke-width="4"
-                stroke-linecap="round"
-            />
-        </svg>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Card</title>
 
 <style>
 
-.analytics-card {
-    position: relative;
-    width: 260px;
-    height: 250px;
-    padding: 24px;
-    border-radius: 20px;
-    overflow: hidden;
-    background: linear-gradient(
-        180deg,
-        #07081b 0%,
-        #09071f 100%
-    );
-    border: 1px solid rgba(255,255,255,0.06);
+
+.custom-card-wrap{
+    height:300px;
+    display:flex;
+    align-items:flex-end;
 }
 
-.logo span {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 700;
+.custom-service-box{
+    width:400px;
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    overflow:hidden;
+    cursor:pointer;
 }
 
-.tag {
-    display: inline-block;
-    margin-top: 14px;
-    padding: 6px 12px;
-    font-size: 12px;
-    color: #c9b8ff;
-    background: rgba(177,76,255,0.12);
-    border-radius: 20px;
+.custom-service-box h3{
+    margin:0;
+    font-size:32px;
+    color:#222;
 }
 
-.divider {
-    width: 100%;
-    height: 1px;
-    background: rgba(255,255,255,0.08);
-    margin: 22px 0;
+.custom-service-content{
+    max-height:0;
+    opacity:0;
+    overflow:hidden;
+    transition:max-height .5s ease,
+               opacity .4s ease,
+               margin-top .4s ease;
 }
 
-.label {
-    margin: 0;
-    color: #9c9cb1;
-    font-size: 13px;
-    text-transform: uppercase;
+.custom-service-box:hover .custom-service-content{
+    max-height:150px;
+    opacity:1;
+    margin-top:15px;
 }
 
-.content h2 {
-    margin: 6px 0;
-    color: #fff;
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 1;
-}
-
-.sub-text {
-    margin: 0;
-    color: #9c9cb1;
-    font-size: 13px;
-}
-
-.graph {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 95px;
-}
-
-.graph svg {
-    width: 100%;
-    height: 100%;
-}
-
-.graph::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-        circle at center,
-        rgba(177,76,255,0.35),
-        transparent 70%
-    );
-    filter: blur(25px);
+.custom-service-content p{
+    color:#666;
+    line-height:1.7;
+    font-size:16px;
 }
 </style>
+</head>
+
+<body>
+
+<div class="custom-card-wrap">
+    <div class="custom-service-box">
+        <h3>Web Development</h3>
+
+        <div class="custom-service-content">
+            <p>
+                We create modern, responsive, and high-performance
+                websites tailored to your business needs.
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
