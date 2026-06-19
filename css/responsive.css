@@ -17,6 +17,49 @@
 .stats {
     width: 70%;
 }
+
+
+
+.migration-showcase{
+        padding:60px 15px;
+    }
+
+    .migration-container{
+        padding:40px 20px;
+        border-radius:24px;
+    }
+
+    .section-header h2{
+        font-size:30px;
+    }
+
+    .section-header p{
+        font-size:16px;
+    }
+
+    .metric-card h3{
+        font-size:42px;
+    }
+
+    .compare-card{
+        padding:25px;
+    }
+
+    .compare-card h3{
+        font-size:22px;
+    }
+
+    .migration-cta{
+        padding:30px 20px;
+    }
+
+    .migration-cta h3{
+        font-size:28px;
+    }
+
+    .cta-btn{
+        width:100%;
+    }
 }
 
 
@@ -45,11 +88,52 @@ h2 {
     margin: 40px 0px 10px;
 
 }
+.migration-container {
+    padding: 40px 0;
+}
+.metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+}
 .left-content h2 {
     font-size: 30px !important;
 
 }
-
+.migration-container {
+    padding: 40px 10px !important;
+}
+.section-header p {
+    max-width: 100%;
+    font-size: 18px;
+}
+.metric-card {
+    padding: 15px;
+}
+.comparison-wrapper {
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+}
+.compare-card {
+    padding: 20px;
+}
+.migration-arrow {
+    width: 45px;
+    height: 45px;
+    top: 50%;
+    transform: translate(-29px, 75%);
+}
+.trust-bar span {
+    padding: 10px 13px;
+    font-size: 13px;
+}
+.migration-cta {
+    padding: 30px 15px;
+}
+.migration-cta h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
 .top-content {
     grid-template-columns: 1fr;
     gap: 0;
@@ -229,4 +313,5 @@ h2 {
 .right-bg {
     text-align: center;
 }
+
 }
