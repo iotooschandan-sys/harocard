@@ -24,7 +24,6 @@ h2{
 }
 
 body {
- font-family: 'GT Super Display' !important;
   /* background:
 linear-gradient(
 135deg,
@@ -34,10 +33,19 @@ linear-gradient(
 #000000 100%
 ) !important; */
 
-background: #02090a !important;
+/* background: #02090a !important; */
+    background: #050917 !important;
 
   color: #fff;
   overflow-x: hidden;
+}
+
+
+
+.overlap-section {
+    margin-top: -40px !important;
+    /* position: sticky; */
+    top: 0;
 }
 
 .txt-blue{
@@ -423,7 +431,7 @@ ul.email-lst {
     background: transparent;
 }
 
-.email-box button {
+.site-btn {
     border: none;
     cursor: pointer;
     padding: 12px 30px;
@@ -432,6 +440,7 @@ ul.email-lst {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 /* =========================
@@ -2378,6 +2387,7 @@ img.p1-img {
     position: absolute;
     bottom: 20px;
     right: 24px;
+    transform: rotate(-90deg);
 }
 .icon-box .arrow {
     color: #fff;
@@ -2424,14 +2434,14 @@ img.p1-img {
 .anim-arrow {
     text-align: right;
     position: absolute;
-    right: -3px;
+    right: -20px;
     bottom: 2px;
     padding: 26px;
     width: 84px;
     height: 18px;
 }
 .anim-arrow span {
-    font-size: 11px;
+    font-size: 18px;
    
     margin: 0 0 0 auto;
     cursor: pointer;
@@ -2677,11 +2687,11 @@ background: linear-gradient(135deg, #3a91b1 0%, /* metallic shine */ #1E3A8A 18%
     color: #fff;
 }
 
-.ecom-service-section {
-    padding: 60px 0;
+.ecom-service-section {   
     border-radius: 42px 42px 0 0;
     background: #fff;
     margin: 10px 0 50px;
+    position: relative;
 }
 
 
@@ -2743,6 +2753,11 @@ section.trusted {
     flex-wrap: wrap;
 }
 
+.counter_section {
+    border-top: 1px solid #00000014;
+    padding-top: 10px;
+}
+
 .counter_number{
     font-size:35px;
     font-weight: 350;
@@ -2760,7 +2775,7 @@ section.trusted {
 /* Main Image */
 .image-card{
     background: linear-gradient(135deg, #3a91b1 0%, /* metallic shine */ #1E3A8A 18%, /* dark blue */ #0F172A 38%, /* midnight blue */ #000000 55%, /* deep black */ #052E16 72%, /* dark emerald shadow */ #0F766E 88%, /* muted metallic green */ #A7F3D0 100% /* reflective highlight */);
-    border-radius:20px;
+    border-radius: 20px 20px 0 0;
     overflow:hidden;
     height:100%;
 }
@@ -2802,9 +2817,8 @@ section.trusted {
 
 .custom-service-box{
     width:100%;
-    background:#fff;
+    background: #ffffff96;
     padding:25px;
-    border-radius:12px;
     box-shadow:0 10px 25px rgba(0,0,0,.1);
     overflow:hidden;
     position:absolute;
@@ -2822,6 +2836,15 @@ section.trusted {
 .custom-service-box h3{
     margin:0;
     color: #052351;
+}
+.icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.iconFa i {
+    color: #052351;
+    font-size: 18px;
 }
 .custom-service-content p {
     color: #525252;
@@ -3043,7 +3066,7 @@ span.arrow.pf-arrow:hover{
 .trust-section{
     position:relative;
     overflow:hidden;
-    border-radius: 42px;
+    border-radius: 42px 42px 0 0;
     background: radial-gradient(
     circle at 0% 0%,
     rgba(28,94,255,.65) 0%,
@@ -3149,17 +3172,17 @@ span.trust-badge.txt-blue {
 }
 
 .stat-box .icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 17px;
-    border: 1px solid rgba(255,255,255,.15);
-    background: rgba(255,255,255,.03);
-    margin-right: 15px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+	border: 1px solid rgba(255,255,255,.15);
+	background: rgba(255,255,255,.03);
+	margin-right: 15px;
 }
 
 .stat-box span {
@@ -3381,8 +3404,13 @@ span.trust-badge.txt-blue {
 
 /* scable csss card =====================================*/
 
+
+
+
+
 .scale-services-sec {
     background: #fff;
+    border-radius: 42px 42px 0 0;
 }
 .scale-services-head {
     text-align: center;
@@ -3654,8 +3682,7 @@ span.trust-badge.txt-blue {
 
 section.growth-stats-section {
     background: radial-gradient(circle at 0% 0%, rgba(28, 94, 255, .65) 0%, rgba(28, 94, 255, .35) 15%, transparent 55%), radial-gradient(circle at right center, rgba(0, 255, 136, 0.18) 0%, rgba(0, 255, 136, 0.08) 25%, transparent 50%), linear-gradient(90deg, #081426 0%, #030915 40%, #02060d 65%, #03120d 100%);
-    border-radius: 42px;
-    margin: 20px 0;
+      border-radius: 42px 42px 0 0;
 }
 .growth-stats-grid{
     margin-top:60px;
@@ -3714,16 +3741,7 @@ section.growth-stats-section {
 
     border-radius:40px;
 
-    background:
-    radial-gradient(circle at 15% 20%, rgba(99,102,241,.20), transparent 35%),
-    radial-gradient(circle at 85% 0%, rgba(14,165,233,.15), transparent 35%),
-    radial-gradient(circle at 50% 100%, rgba(59,130,246,.15), transparent 40%),
-    linear-gradient(
-        135deg,
-        #050816 0%,
-        #0f172a 50%,
-        #020617 100%
-    );
+    background: radial-gradient(circle at 0% 0%, rgba(28, 94, 255, .65) 0%, rgba(28, 94, 255, .35) 15%, transparent 55%), radial-gradient(circle at right center, rgba(0, 255, 136, 0.18) 0%, rgba(0, 255, 136, 0.08) 25%, transparent 50%), linear-gradient(90deg, #081426 0%, #030915 40%, #02060d 65%, #03120d 100%);
 
     border:1px solid rgba(255,255,255,.08);
 }
@@ -3794,9 +3812,9 @@ section.growth-stats-section {
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:20px;
+    gap:10px;
 
-    margin-bottom:50px;
+    margin-bottom:25px;
 }
 
 /* .metric-card{
@@ -3828,6 +3846,9 @@ section.growth-stats-section {
     -webkit-transition: all .5s linear;
     -o-transition: all .5s linear;
     transition: all .5s linear;
+}
+.metric-card:hover {
+    transform: translateY(-5px) scale(1.02);
 }
 .metric-card h3 {
     color: #fff;
@@ -4150,7 +4171,7 @@ section.growth-stats-section {
 @media(max-width:575px) {
 
     section {
-    padding: 40px 0;
+    padding: 40px 0 60px;
      padding-left: 0px !important;
     padding-right: 0px !important;
 }

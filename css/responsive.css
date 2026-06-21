@@ -77,6 +77,10 @@
 .trusted-title::before, .trusted-title::after {
     display: none;
 }
+
+.overlap-section {
+    margin-top: -30px !important;
+}
 .upw_main_sec {
     padding: 50px 0;
 }
@@ -120,8 +124,8 @@ h2 {
 .migration-arrow {
     width: 45px;
     height: 45px;
-    top: 50%;
-    transform: translate(-29px, 75%);
+    top: 56%;
+    transform: translate(-29px, 13%);
 }
 .trust-bar span {
     padding: 10px 13px;
@@ -151,9 +155,23 @@ h2 {
 .growth-stats-grid {
     margin-top: 0;
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.growth-stats-wrapper {
+    padding: 0 10px;
+}
+
+.growth-stat-card:last-child {
+    border-right: 1px solid #e5e5e530;;
+}
+.growth-main-heading {
+    margin-bottom: 35px;
 }
 .growth-stat-card {
-    padding: 10px;
+    text-align: center;
+    padding: 25px;
+    border: 1px solid #e5e5e530;
+    border-radius: 15px;
 }
 .stat-box .icon {
     width: 38px;
@@ -190,7 +208,7 @@ h2 {
     top: 5px;
 }
 .bottom-text {
-    margin-top: 18px;
+    margin: 18px 0;
     font-size: 12px;
     gap: 6px;
     justify-content: left;
@@ -295,7 +313,7 @@ h2 {
     padding: 0;
 }
 .ecom-service-section {
-    padding: 50px 0;
+    padding: 40px 0;
 }
 .ecom-description {
     font-size: 18px;
