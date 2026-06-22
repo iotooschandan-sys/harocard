@@ -3247,19 +3247,8 @@ span.trust-badge.txt-blue {
     border-color:#00e5ff;
 }
 
-.award-logo {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: rgba(255,255,255,.05);
-    border: 1px solid rgba(255,255,255,.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-weight: 700;
-    font-size: 24px;
-    flex-shrink: 0;
+.award-logo img {
+    width: 75px;
 }
 
 .award-title{
