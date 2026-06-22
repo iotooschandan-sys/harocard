@@ -4135,6 +4135,155 @@ section.growth-stats-section {
 
 
 
+
+
+.migration-section{
+    max-width:1400px;
+    margin:auto;
+}
+
+.migration-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1.1fr;
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:20px;
+    height:100%;
+}
+
+.card h3{
+    font-size:20px;
+    color:#111827;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.table-wrap{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#f3f4f6;
+    text-align:left;
+    padding:12px;
+    font-size:14px;
+    font-weight:700;
+    color:#111827;
+    border:1px solid #e5e7eb;
+}
+
+table td{
+    padding:12px;
+    font-size:14px;
+    color:#4b5563;
+    border:1px solid #e5e7eb;
+}
+
+.note{
+    margin-top:15px;
+    color:#6b7280;
+    font-size:13px;
+    line-height:1.6;
+}
+
+/* CTA CARD */
+
+.cta-card{
+    background:linear-gradient(135deg,#001a66,#0036d1);
+    color:#fff;
+    border-radius:12px;
+    padding:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    min-height:100%;
+}
+
+.cta-content{
+    flex:1;
+}
+
+.cta-content h3{
+    color:#fff;
+    font-size:24px;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.cta-content p{
+    color:rgba(255,255,255,.85);
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:18px;
+}
+
+.checklist{
+    list-style:none;
+    margin-bottom:25px;
+    padding: 0;
+}
+
+.checklist li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+    font-size:15px;
+}
+
+.check{
+    width:18px;
+    height:18px;
+    background:#22c55e;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:11px;
+    font-weight:bold;
+    flex-shrink:0;
+}
+
+.download-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:#fff;
+    color:#0036d1;
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:8px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.download-btn:hover{
+    transform:translateY(-2px);
+}
+
+.clipboard{
+    flex-shrink:0;
+}
+
+.clipboard svg{
+    width:140px;
+    height:auto;
+}
+
+
+
+
 /*  ====================================================================================================
 --------------------------  Responsive 
 ====================================================================================================*/
