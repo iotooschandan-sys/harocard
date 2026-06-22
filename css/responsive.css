@@ -206,10 +206,8 @@ h2 {
     padding: 10px;
     min-height: 100%;
 }
-.award-logo {
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
+.award-logo img {
+    width: 60px;
 }
 .year {
     font-size: 10px;
