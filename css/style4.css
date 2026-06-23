@@ -386,6 +386,18 @@ img.c-img {
   border-radius: 12px;
   margin-bottom: 10px;
 }
+.email-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 4px 24px 5px 24px;
+    font-size: 18px;
+    color: #111827;
+    background: transparent;
+}
+.email-box input::placeholder{
+  font-weight: 500;
+}
 
 ul.email-lst {
   list-style: none;
@@ -414,14 +426,14 @@ ul.email-lst {
   margin-bottom: 5px;
 }
 
-.email-box i {
+.email-box  .fa-envelope {
   color: #00000057;
   font-size: 26px;
   padding-left: 20px;
   border-radius: 20px;
 }
 
-.email-box input {
+.email-box  .fa-envelopenput {
     flex: 1;
     border: none;
     outline: none;
@@ -939,7 +951,7 @@ ul.email-lst li {
     font-size: 17px;
   }
 
-  .email-box i {
+  .email-box  .fa-envelope {
     font-size: 21px;
     position: absolute;
     left: 48px;
@@ -949,7 +961,7 @@ ul.email-lst li {
     position: relative;
   }
 
-  .email-box i {
+  .email-box  .fa-envelope {
     font-size: 21px;
     position: absolute;
     left: -4px;
@@ -4065,7 +4077,7 @@ section.growth-stats-section {
     box-shadow: 0 20px 40px rgba(0,0,0,.35);
     position: absolute;
     left: 50%;
-    z-index: 999;
+    z-index: 5;
     transform: translate(-50%, 0px);
 }
 
@@ -4501,6 +4513,7 @@ button.mb-btn {
     border: navajowhite;
     color: #fff;
     border-radius: 50%;
+    font-size: 11px;
 }
 
   .plus {
@@ -4586,7 +4599,7 @@ button.mb-btn {
     padding-right: 0;
   }
 
-  .email-box input {
+  .email-box  .fa-envelopenput {
     padding: 2px 7px 2px 27px;
   }
 
@@ -4645,11 +4658,11 @@ button.mb-btn {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  .email-box input {
+  .email-box  .fa-envelopenput {
     padding: 9px 24px 9px 44px;
   }
 
-  .email-box i {
+  .email-box  .fa-envelope {
     top: 19px;
   }
 
@@ -4673,7 +4686,7 @@ button.mb-btn {
     max-width: 270px;
   }
 
-  .email-box input {
+  .email-box  .fa-envelopenput {
     padding: 7px 24px 6px 70px;
   }
 }
