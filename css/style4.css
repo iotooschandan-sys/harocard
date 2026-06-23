@@ -436,7 +436,7 @@ ul.email-lst {
     cursor: pointer;
     padding: 12px 30px;
     border-radius: 16px;
-    background: linear-gradient(90deg, #2563ff, #d946ef);
+    background: linear-gradient(45deg, #052351, #2159b2);
     color: #fff;
     font-size: 16px;
     font-weight: 700;
@@ -886,6 +886,7 @@ ul.email-lst li {
 .trusted strong {
   color: #1d4ed8;
 }
+
 
 /* =========================
    RESPONSIVE
@@ -1856,6 +1857,7 @@ RIGHT SIDE ELEGANT SLIDER
     box-shadow .45s ease;
 
   isolation: isolate;
+  height: 100%;
 }
 
 .service-card::before {
@@ -2363,6 +2365,42 @@ img.p1-img {
 
 .service-card {
   cursor: pointer;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.service-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    max-width: 90%;
+    background: linear-gradient(180deg, rgba(10, 10, 12, 0.92), rgba(5, 5, 8, 0.98));
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: .3s ease;
+    z-index: 9999;
+    min-height: 240px;
+}
+
+.service-popup.active{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.service-popup h4{
+    margin-bottom: 10px;
+}
+.service-popup h4 {
+    font-size: 30px;
 }
 
 @media(max-width:768px) {
@@ -2756,6 +2794,7 @@ section.trusted {
 .counter_section {
     border-top: 1px solid #00000014;
     padding-top: 10px;
+    margin-top: 20px;
 }
 
 .counter_number{
@@ -3821,7 +3860,7 @@ section.growth-stats-section {
     padding:30px;
 } */
 
-.metric-card {
+.colboxget {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
@@ -3836,10 +3875,10 @@ section.growth-stats-section {
     -o-transition: all .5s linear;
     transition: all .5s linear;
 }
-.metric-card:hover {
+.colboxget:hover {
     transform: translateY(-5px) scale(1.02);
 }
-.metric-card h3 {
+.colboxget h3 {
     color: #fff;
     font-size: 35px;
     margin-bottom: 10px;
@@ -3847,7 +3886,7 @@ section.growth-stats-section {
     font-weight: bold;
 }
 
-.metric-card p{
+.colboxget p{
 
     color:rgba(255,255,255,.70);
     font-weight: bold;
@@ -4187,16 +4226,19 @@ table td{
 
 /* CTA CARD */
 
-.cta-card{
-    background:linear-gradient(135deg,#001a66,#0036d1);
-    color:#fff;
-    border-radius:12px;
-    padding:30px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
-    min-height:100%;
+.cta-card-bg {
+    background: linear-gradient(135deg,#001a66,#0036d1);
+    border-radius: 12px;
+    padding: 30px;
+    min-height: 100%;
+}
+
+.cta-card {
+    color: #fff;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 64% 36%;
 }
 
 .cta-content{
@@ -4447,7 +4489,7 @@ table td{
     height: 20px;
   }
 
-  button.mb-btn {
+button.mb-btn {
     display: block;
     position: absolute;
     width: 30px;
@@ -4455,7 +4497,11 @@ table td{
     height: 30px;
     padding: 0;
     /* font-weight: bold; */
-  }
+    background: linear-gradient(45deg, #052351, #2159b2);
+    border: navajowhite;
+    color: #fff;
+    border-radius: 50%;
+}
 
   .plus {
     width: 14px;

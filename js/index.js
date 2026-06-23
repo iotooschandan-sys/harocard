@@ -1,51 +1,71 @@
+const cards = document.querySelectorAll(".service-box");
 
- 
- 
+cards.forEach(card => {
+    const popup = card.querySelector(".service-popup");
 
-const cards = document.querySelectorAll(".service-card");
-const modal = document.getElementById("popupModal");
-
-const popupTitle = document.getElementById("popupTitle");
-const popupContent = document.getElementById("popupContent");
-const popupImg = document.getElementById("popupImg");
-
-cards.forEach(card=>{
-
-    card.addEventListener("click",()=>{
-
-        const title =
-        card.querySelector("h2,h3").innerText;
-
-        const content =
-        card.querySelector("p").innerText;
-
-        const image =
-        card.querySelector("img").src;
-
-        popupTitle.innerText = title;
-        popupContent.innerText = content;
-        popupImg.src = image;
-
-        modal.classList.add("active");
-
+    card.addEventListener("mouseenter", () => {
+        popup.classList.add("active");
     });
 
+    card.addEventListener("mouseleave", () => {
+        setTimeout(() => {
+            if (!popup.matches(":hover")) {
+                popup.classList.remove("active");
+            }
+        }, 100);
+    });
+
+    popup.addEventListener("mouseleave", () => {
+        popup.classList.remove("active");
+    });
 });
+ 
+ 
 
-document.querySelector(".close-btn")
-.addEventListener("click",()=>{
+// const cards = document.querySelectorAll(".service-card");
+// const modal = document.getElementById("popupModal");
 
-    modal.classList.remove("active");
+// const popupTitle = document.getElementById("popupTitle");
+// const popupContent = document.getElementById("popupContent");
+// const popupImg = document.getElementById("popupImg");
 
-});
+// cards.forEach(card=>{
 
-modal.addEventListener("click",(e)=>{
+//     card.addEventListener("click",()=>{
 
-    if(e.target===modal){
-        modal.classList.remove("active");
-    }
+//         const title =
+//         card.querySelector("h2,h3").innerText;
 
-});
+//         const content =
+//         card.querySelector("p").innerText;
+
+//         const image =
+//         card.querySelector("img").src;
+
+//         popupTitle.innerText = title;
+//         popupContent.innerText = content;
+//         popupImg.src = image;
+
+//         modal.classList.add("active");
+
+//     });
+
+// });
+
+// document.querySelector(".close-btn")
+// .addEventListener("click",()=>{
+
+//     modal.classList.remove("active");
+
+// });
+
+// modal.addEventListener("click",(e)=>{
+
+//     if(e.target===modal){
+//         modal.classList.remove("active");
+//     }
+
+// });
 
 
 //   <!-- Initialize Swiper -->
