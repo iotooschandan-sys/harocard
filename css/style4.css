@@ -4562,11 +4562,12 @@ table td{
 
 @media(max-width:575px) {
 
-    section {
+section {
     padding: 40px 0 60px;
      padding-left: 0px !important;
     padding-right: 0px !important;
 }
+
 
 .portfolio-swiper {
     overflow: hidden !important;
@@ -4855,6 +4856,23 @@ button.mb-btn {
     color: #000;
     margin-bottom: 10px;
 }
+
+
+/* res new */
+
+.project-details {
+    display: none;
+}
+.p-para{
+  display: none;
+}
+.custom-service-box:hover {
+    height: 229px;
+}
+.project-logo {
+    display: none;
+}
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -4877,6 +4895,8 @@ button.mb-btn {
   .form-secwrap {
     margin-bottom: 15px;
   }
+
+
 
 
 }
