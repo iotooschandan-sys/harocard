@@ -1,25 +1,4 @@
-const cards = document.querySelectorAll(".service-box");
 
-cards.forEach(card => {
-    const popup = card.querySelector(".service-popup");
-
-    card.addEventListener("mouseenter", () => {
-        popup.classList.add("active");
-    });
-
-    card.addEventListener("mouseleave", () => {
-        setTimeout(() => {
-            if (!popup.matches(":hover")) {
-                popup.classList.remove("active");
-            }
-        }, 100);
-    });
-
-    popup.addEventListener("mouseleave", () => {
-        popup.classList.remove("active");
-    });
-});
- 
  
 
 // const cards = document.querySelectorAll(".service-card");
