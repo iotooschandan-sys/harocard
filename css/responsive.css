@@ -14,6 +14,11 @@
 .left-content h1 {
     font-size: 50px;
 }
+.testimonial-popup {
+    top: 30%;
+    left: 4% !important;
+    width: 90%;
+}
 .stats {
     width: 70%;
 }
@@ -38,6 +43,9 @@ button.mb-btn {
 
 .comparison-wrapper {
     grid-template-columns: 1fr;
+}
+.portfolio-right {
+    margin-top: 40px;
 }
 .hero {
     background-size: cover;
@@ -118,6 +126,15 @@ button.mb-btn {
 }
 .clipboard {
     display: none;
+}
+
+.portfolio-right {
+    margin-top: 40px;
+}
+.testimonial-popup {
+    top: 30%;
+    left: 4% !important;
+    width: 90%;
 }
 
 .overlap-section {
