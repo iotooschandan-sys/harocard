@@ -45,7 +45,7 @@ linear-gradient(
     color: #fff;
     font-size: 20px;
     border-radius: 50%;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     width: 35px;
     height: 35px;
     display: grid;
@@ -56,7 +56,7 @@ linear-gradient(
   font-size: 16px;
  }
 .bl-arrow {
-    border: 1px solid #052351;
+    border: 2px solid #052351;
     color: #052351;
 }
 
@@ -2931,11 +2931,55 @@ section.trusted {
 
 
 /* portfolio css */
-.project-card{
-    display:flex;
-    gap:10px;
-    
+.project-card {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 190px 1fr;
 }
+
+.testimonial-card{
+    position: relative;
+    display: inline-block;
+    overflow: visible; /* Hidden mat rakhna */
+}
+
+.testimonial-popup {
+    position: absolute;
+    top: 22%;
+    left: -37% !important;
+    transform: translateY(-50%);
+    width: 355px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+    z-index: 999;
+    min-height: 120px;
+}
+.testimonial-popup p {
+    line-height: 1.5;
+    color: black;
+    font-size: 15px;
+}
+
+.testimonial-card:hover .testimonial-popup{
+    opacity: 1;
+    visibility: visible;
+    left: calc(100% + 15px);
+}
+
+.testimonial-para {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
 
 .project-sidebar{
     width:220px;
@@ -3033,8 +3077,25 @@ section.trusted {
     font-size: 22px;
     font-weight: 700;
     position: absolute;
-    right: 18px;
-    bottom: 18px;
+    right: 25px;
+    bottom: -17px;
+    z-index: 1;
+}
+
+.portfolio-left:hover .case-study-link{
+    animation: hideShow 1.5s ease;
+}
+
+@keyframes hideShow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .case-study-link:hover .case-study-icon{
@@ -3072,19 +3133,31 @@ p.p-para {
 
 
 
-.custom-service-box{
-    width:100%;
-    background: #ffffffde;
-    padding:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
-    overflow:hidden;
-    position:absolute;
-    bottom:0; /* bottom fix */
-    left:0;
-    transition:height .5s ease;
-    height:80px; /* initial height */
+.custom-service-box {
+    background: #ffff;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    overflow: hidden;
+    position: absolute;
+    bottom: -37px;
+    left: 34px;
+    transition: height .5s ease;
+    height: 80px;
     cursor: pointer;
+    width: 94%;
+    border-radius: 5px 0 5px;
 }
+
+.icon-wrap1 i {
+  color: #fff;
+  font-size: 25px;
+}
+.icon-wrap1 {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+}
+
 
 .custom-service-box:hover{
     height:515px; /* expand upward */
