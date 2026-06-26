@@ -2916,7 +2916,7 @@ section.trusted {
 /* Main Image */
 .image-card{
     background: linear-gradient(135deg, #3a91b1 0%, /* metallic shine */ #1E3A8A 18%, /* dark blue */ #0F172A 38%, /* midnight blue */ #000000 55%, /* deep black */ #052E16 72%, /* dark emerald shadow */ #0F766E 88%, /* muted metallic green */ #A7F3D0 100% /* reflective highlight */);
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     overflow:hidden;
     height:100%;
 }
@@ -3136,13 +3136,13 @@ p.p-para {
     box-shadow: 0 10px 25px rgba(0,0,0,.1);
     overflow: hidden;
     position: absolute;
-    bottom: -37px;
+    bottom: 0px;
     left: 0px;
     transition: height .5s ease;
     height: 220px;
     cursor: pointer;
     width: 100%;
-    border-radius: 5px 0 5px;
+    border-radius: 5px 0;
 }
 
 .custom-service-box:hover .show-bg{
@@ -3202,6 +3202,7 @@ p.p-para {
     color:#052351;
     font-weight:700;
     line-height:1.2;
+    text-align: center;
 }
 
 .project-stat-value span{
