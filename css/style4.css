@@ -74,25 +74,37 @@ linear-gradient(
    HERO
 ========================= */
 
-/* .hero {
-    position: relative;
-    overflow: hidden;
-    padding: 60px 0 70px;    
-    background-image: url('../img/banner1.png');
-    background-size: cover%;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
 .hero {
+    position: relative;
+  overflow: hidden;
+    padding: 60px 0 70px;
+    /* background: radial-gradient(circle at 75% 25%, rgba(115, 62, 255, 0.45), transparent 28%), radial-gradient(circle at 30% 70%, rgba(67, 31, 182, 0.20), transparent 32%), #050114; */   
+    background-image: url('../img/banner7.png');
+    background-size: 104%;
+    background-position: 6% 36%;
+    background-repeat: no-repeat;
+    border-radius: 0 0 42px 42px;
+}
+
+
+/* .hero {
     position: relative;
     padding: 0 !important;
     padding: 0 0 60px 0 !important;
-}
+} */
 .banner-image {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
+}
+.hero-left .badge {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+.hero-left .badge span{
+    color: #73fd20;
 }
 
 .right-banner-img img {
@@ -276,7 +288,6 @@ mask-image: linear-gradient(to bottom, transparent 0%, rgb(0 0 0 / 67%) 15%, #00
     grid-template-columns: 58% 42%;
     align-items: center;
     gap: 10px;
-    padding: 50px 30px 0;
 }
 
 /* =========================
@@ -928,8 +939,6 @@ ul.email-lst li {
 }
 
 .trusted p {
-  max-width: 1100px;
-  margin: auto;
 
   font-size: 18px;
   line-height: 1.6;
@@ -1833,7 +1842,29 @@ RIGHT SIDE ELEGANT SLIDER
 
   overflow: hidden;
 }
-
+.icon-trst i {
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-content: center;
+}
+.service-head {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.service-head p {
+    color: #fff;
+}
+.trusted.trst {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+}
 .services-grid {
   max-width: 1400px;
   margin: auto;
@@ -2251,8 +2282,6 @@ img.p1-img {
 }
 
 .trusted p {
-  max-width: 980px;
-  margin: auto;
   font-size: 18px;
   line-height: 1.6;
   color: #fff;
@@ -2961,9 +2990,8 @@ section.trusted {
 
 .testimonial-popup {
     position: absolute;
-    bottom: -93px;
+    bottom: 0;
     left: 0% !important;
-    transform: translateY(-50%);
     width: 285px;
     padding: 20px;
     background: #fff;
@@ -3048,8 +3076,11 @@ section.trusted {
     border-left:1px solid #d9d9d985;
 }
 
-.project-section{
-    margin-bottom:15px;
+.project-section {
+    margin: 15px 0;
+}
+.project-section h3 {
+    margin-bottom: 8px;
 }
 
 .feature-list{
@@ -3093,8 +3124,8 @@ section.trusted {
     font-size: 22px;
     font-weight: 700;
     position: absolute;
-    right: -110px;
-    bottom: 152px;
+    right: 0px;
+    bottom: 176px;
     z-index: 1;
 }
 a.case-study-link1 {
@@ -3163,10 +3194,10 @@ p.p-para {
     bottom: 0px;
     left: 0px;
     transition: height .5s ease;
-    height: 220px;
+    height: 245px;
     cursor: pointer;
     width: 100%;
-    border-radius: 5px 0;
+    border-radius: 5px;
 }
 
 .custom-service-box:hover .show-bg{
@@ -3195,18 +3226,21 @@ p.p-para {
 .icon-wrap {
     border-top: 1px solid #0000001c;
     margin: 10px 0;
+    padding-top: 10px;
 }
 .show-bg .cate {
     font-size: 14px;
 }
 .show-bg {
-    width: 80%;
+    width: 100%;
     position: relative;
 }
 .project-stats{
     display:flex;
-    gap:25px;
     align-items:flex-start;
+    border-top: 1px solid #0000001c;
+    padding-top: 10px;
+    justify-content: space-between;
 }
 
 .project-stat-card{
@@ -3226,7 +3260,12 @@ p.p-para {
     color:#052351;
     font-weight:700;
     line-height:1.2;
-    text-align: center;
+}
+.metrics-grid .colboxget {
+    padding: 15px;
+}
+.migration-container .section-header {
+    margin-bottom: 30px;
 }
 
 .project-stat-value span{
@@ -3457,6 +3496,7 @@ span.arrow.pf-arrow {
 
 
 .trust-section{
+    margin-top: 20px;;
     position:relative;
     overflow:hidden;
     border-radius: 42px 42px 0 0;
@@ -3787,12 +3827,15 @@ span.trust-badge.txt-blue {
 /* scable csss card =====================================*/
 
 
-
+.trust-section .stats-bar {
+    width: 100%;
+}
 
 
 .scale-services-sec {
     background: #fff;
     border-radius: 42px 42px 0 0;
+    margin-top: 20px;
 }
 .scale-services-head {
     text-align: center;
@@ -4078,6 +4121,13 @@ section.growth-stats-section {
     grid-template-columns:repeat(5,1fr);
 }
 
+span.badge-dot {
+    font-size: 25px;
+    background: #73fd20;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
 .growth-stat-card{
     text-align:center;
     padding:0 25px;

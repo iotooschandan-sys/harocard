@@ -14,6 +14,20 @@
 .left-content h1 {
     font-size: 50px;
 }
+
+section {
+    padding: 60px;
+}
+.trusted.trst {
+    max-width: 100%;
+}
+.hero {
+    padding: 40px 0 0px;
+}
+.email-box input {
+    padding: 8px 24px 5px 41px;
+}
+
 .testimonial-popup {
     top: 30%;
     left: 4% !important;
@@ -112,6 +126,41 @@ button.mb-btn {
 .hero {
     padding: 30px 0;
 }
+.service-head {
+    width: 100%;
+}
+.trusted.trst {
+    max-width: 100%;
+    margin: 15px auto;
+}
+.custom-service-box {
+    padding: 15px;
+}
+.icon-wrap {
+    margin: 5px 0;
+    padding-top: 5px;
+}
+.case-study-link {
+    bottom: 268px;
+}
+.project-stat-value span {
+    font-size: 16px;
+}
+.project-stat-value {
+    font-size: 18px;
+}
+.project-stat-title {
+    font-size: 13px;
+}
+.image-card {
+    height: 475px;
+}
+.project-section {
+    display: none;
+}
+.icon-trst {
+    display: none;
+}
 .trusted-title::before, .trusted-title::after {
     display: none;
 }
@@ -128,13 +177,13 @@ button.mb-btn {
     display: none;
 }
 
-.portfolio-right {
-    margin-top: 40px;
-}
 .testimonial-popup {
-    top: 30%;
-    left: 4% !important;
-    width: 90%;
+    bottom: 0;
+    left: 0% !important;
+    width: 100%;
+}
+.testimonial-card:hover {
+    transform: scale(1);
 }
 
 .overlap-section {
@@ -242,7 +291,7 @@ h2 {
 }
 .growth-stat-card {
     text-align: center;
-    padding: 25px;
+    padding: 18px;
     border: 1px solid #e5e5e530;
     border-radius: 15px;
 }
