@@ -74,15 +74,30 @@ linear-gradient(
    HERO
 ========================= */
 
-.hero {
+/* .hero {
     position: relative;
     overflow: hidden;
-    padding: 60px 0 70px;
-    /* background: radial-gradient(circle at 75% 25%, rgba(115, 62, 255, 0.45), transparent 28%), radial-gradient(circle at 30% 70%, rgba(67, 31, 182, 0.20), transparent 32%), #050114; */
+    padding: 60px 0 70px;    
     background-image: url('../img/banner1.png');
-    background-size: 104%;
-    background-position: 6% 36%;
+    background-size: cover%;
+    background-position: center;
     background-repeat: no-repeat;
+} */
+.hero {
+    position: relative;
+    padding: 0 !important;
+    padding: 0 0 60px 0 !important;
+}
+.banner-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.right-banner-img img {
+    width: 122%;
+    margin-left: -92px;
 }
 
 /* glow */
@@ -249,11 +264,19 @@ mask-image: linear-gradient(to bottom, transparent 0%, rgb(0 0 0 / 67%) 15%, #00
    GRID
 ========================= */
 
-.hero-grid {
+/* .hero-grid {
   display: grid;
   grid-template-columns: 58% 42%;
   align-items: center;
   gap: 10px;
+} */
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 30px 0;
 }
 
 /* =========================
@@ -262,6 +285,7 @@ mask-image: linear-gradient(to bottom, transparent 0%, rgb(0 0 0 / 67%) 15%, #00
 
 .hero-left {
   padding-right: 20px;
+  z-index: 1;
 }
 
 .badge {
@@ -4045,7 +4069,8 @@ transition: 0.5s;
 
 section.growth-stats-section {
     background: radial-gradient(circle at 0% 0%, rgba(28, 94, 255, .65) 0%, rgba(28, 94, 255, .35) 15%, transparent 55%), radial-gradient(circle at right center, rgba(0, 255, 136, 0.18) 0%, rgba(0, 255, 136, 0.08) 25%, transparent 50%), linear-gradient(90deg, #081426 0%, #030915 40%, #02060d 65%, #03120d 100%);
-      border-radius: 42px 42px 0 0;
+      border-radius: 42px;
+      padding: 50px 0;
 }
 .growth-stats-grid{
     margin-top:60px;
@@ -4055,7 +4080,7 @@ section.growth-stats-section {
 
 .growth-stat-card{
     text-align:center;
-    padding:25px;
+    padding:0 25px;
     border-right: 1px solid #e5e5e530;
 }
 
@@ -4645,6 +4670,9 @@ table td{
     width:140px;
     height:auto;
 }
+
+
+/* right banner img css ============================== */
 
 
 
