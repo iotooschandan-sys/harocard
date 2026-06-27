@@ -141,7 +141,14 @@ button.mb-btn {
     padding-top: 5px;
 }
 .case-study-link {
-    bottom: 268px;
+    bottom: 104px;
+}
+.case-study-link .arrow {
+    width: 25px;
+    height: 25px;
+}
+.case-study-link .arrow i {
+    font-size: 12px;
 }
 .project-stat-value span {
     font-size: 16px;
@@ -241,6 +248,9 @@ h2 {
 }
 .migration-arrow svg {
     transform: rotate(89deg);
+}
+.custom-service-box {
+    height: 160px;
 }
 .trust-bar span {
     padding: 10px 13px;
