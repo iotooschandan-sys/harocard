@@ -245,6 +245,7 @@ h2 {
     height: 45px;
     top: 56%;
     transform: translate(-29px, 13%);
+    display: none;
 }
 .migration-arrow svg {
     transform: rotate(89deg);
