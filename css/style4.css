@@ -3015,6 +3015,11 @@ section.trusted {
     left: calc(100% + 15px);
 }
 
+.testimonial-popup .stars {
+    display: flex;
+    justify-content: center;
+}
+
 .testimonial-para {
     display: -webkit-box;
     -webkit-line-clamp: 6;
@@ -3034,10 +3039,13 @@ section.trusted {
     margin-bottom:15px;
 }
 
-.project-logo img{
-    max-width:60px;
-    width:100%;
-    display:block;
+.project-logo img {
+    max-width: 60px;
+    width: 100%;
+    display: block;
+    border: 1px solid #0000004a;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 .project-heading,
@@ -3125,7 +3133,7 @@ section.trusted {
     font-weight: 700;
     position: absolute;
     right: 0px;
-    bottom: 176px;
+    bottom: 140px;
     z-index: 1;
 }
 a.case-study-link1 {
@@ -3194,7 +3202,7 @@ p.p-para {
     bottom: 0px;
     left: 0px;
     transition: height .5s ease;
-    height: 245px;
+    height: 200px;
     cursor: pointer;
     width: 100%;
     border-radius: 5px;
@@ -3442,6 +3450,12 @@ span.arrow.pf-arrow {
 .testimonial-card p{
     line-height:1.5;
 }
+span.qt {
+    font-size: 41px;
+    vertical-align: middle;
+    line-height: 0;
+}
+
 
 .testimonial-card hr {
     border-color: rgba(255,255,255,.4);
@@ -3678,6 +3692,28 @@ span.trust-badge.txt-blue {
 .award-card:hover{
     transform:translateY(-8px);
     border-color:#00e5ff;
+}
+
+.trust-section .stats-bar {
+    background: rgba(255, 255, 255, .03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(39 83 177 / 22%);
+    overflow: hidden;
+}
+.trust-section .stats-bar::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    width: 160px;
+    height: 111px;
+    background: radial-gradient(circle, rgba(0,212,255,.5) 1px, transparent 1.5px);
+    background-size: 10px 10px;
+    border-radius: 50%;
+    opacity: .35;
+    transform: rotate(-20deg);
+    mask-image: radial-gradient(circle, #000 45%, transparent 80%);
+    -webkit-mask-image: radial-gradient(circle, #000 45%, transparent 80%);
 }
 
 .award-logo img {
@@ -4898,9 +4934,12 @@ section {
 
   .avatars img:first-child {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
+.stats-text p {
+    margin-bottom: 0;
+}
 
 button.mb-btn {
     display: block;
@@ -4977,6 +5016,7 @@ button.mb-btn {
 
   .stats-text h3 {
     font-size: 18px;
+    margin-bottom: 0;
   }
 
   .visual {
@@ -5051,10 +5091,13 @@ button.mb-btn {
     grid-template-columns: 1fr 1fr;
 }
 .counter_number {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
     color: #000;
     margin-bottom: 10px;
+}
+.counter_text {
+    font-size: 14px;
 }
 
 
