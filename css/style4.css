@@ -500,7 +500,7 @@ ul.email-lst {
     border: none;
     cursor: pointer;
     padding: 12px 30px;
-    border-radius: 16px;
+    border-radius: 10px;
     background: linear-gradient(45deg, #052351, #2159b2);
     color: #fff;
     font-size: 16px;
@@ -852,6 +852,7 @@ ul.email-lst {
 .stats-text p {
   font-size: 13px;
   color: rgba(255, 255, 255, .72);
+  margin-bottom: 0;
 }
 
 /* avatars */
@@ -2991,8 +2992,8 @@ section.trusted {
 .testimonial-popup {
     position: absolute;
     bottom: 0;
-    left: 0% !important;
-    width: 285px;
+    left: -75% !important;
+    width: 500px;
     padding: 20px;
     background: #fff;
     border-radius: 20px;
@@ -3002,17 +3003,28 @@ section.trusted {
     transition: .3s ease;
     z-index: 999;
     min-height: 120px;
+    transform: translate(30px, 30px);
+
+    transition: all 0.4s ease;
 }
 .testimonial-popup p {
     line-height: 1.5;
     color: black;
     font-size: 15px;
 }
+.testimonial-popup .author-wrap h5 {
+    color: #052351;
+}
+.testimonial-popup .author-wrap {
+    border-top: 1px solid #0000001a;
+    padding-top: 15px;
+}
 
 .testimonial-card:hover .testimonial-popup{
     opacity: 1;
     visibility: visible;
     left: calc(100% + 15px);
+    transform: translate(0, -20px);
 }
 
 .testimonial-popup .stars {
@@ -3056,7 +3068,7 @@ section.trusted {
     font-size:18px;
     font-weight:700;
     color:#16315d;
-    border-bottom:3px solid #16315d;
+    border-bottom:2px solid #16315d;
 }
 
 .tech-list {
@@ -3225,6 +3237,9 @@ p.p-para {
 
 .custom-service-box:hover{
     height:454px; /* expand upward */
+}
+.custom-service-content strong {
+    color: #052351;
 }
 
 .custom-service-box h3{
@@ -4761,7 +4776,80 @@ table td{
 /* right banner img css ============================== */
 
 
+/* New css live  ============================== */
 
+.srv-btm-img img {
+    height: 150px;
+    width: 100%;
+}
+
+.service-highlights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 8px 12px;
+}
+
+.highlight-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+    color:#2b3b7a;
+}
+
+.highlight-card i{
+    font-size:18px;
+}
+
+.highlight-card span{
+    font-size:11px;
+    color:#222;
+    font-weight:500;
+}
+
+.performance-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 10px;
+    width: 100%;
+    background: #f0eef7;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+}
+.performance-icon{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#6d4df5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.performance-icon i{
+    color:#fff;
+    font-size:18px;
+}
+
+.performance-content h4{
+    margin:0;
+    font-size:16px;
+    font-weight:700;
+    color:#1f2a44;
+    line-height:1.2;
+}
+
+.performance-content p{
+    margin:2px 0 0;
+    font-size:11px;
+    color:#444;
+    line-height:1.2;
+}
+
+/* New css live  end============================== */
 
 /*  ====================================================================================================
 --------------------------  Responsive 
